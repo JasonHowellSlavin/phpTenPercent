@@ -49,7 +49,23 @@ function addWordsToDB ($col1, $col2, $col3, $col4) {
     try {
         $dbh = new PDO($dsn, $user, $password);
 
-        $dbh->query($insertQuery);
+        $submittedNumber = $_POST["userID"];
+
+        $dbIds = $dbh->query('SELECT * FROM webWords WHERE personID=' . $submittedNumber);
+
+        if ($dbIds->fetch() == false) {
+            $dbh->query($insertQuery);
+        } else {
+             echo "Sorry, that number has been taken";
+        }
+
+        /**
+         * The fetch() function essentially returns the sql query in a way that you can manage. More experimentation should be done.
+         */
+//        while ($row = $dbIds->fetch())
+//        {
+//            echo $row["personID"];
+//        }
 
         foreach( $dbh->query('SELECT * FROM webWords;') as $row) {
             printf("<tr><td> %s </td><td> %s </td><td> %s </td><td> %s </td></tr>",
