@@ -30,55 +30,57 @@ if ($_POST['word'] == '' ) {
     echo "No word today?";
     exit;
 } else {
-    $word = addslashes($_POST['word']);
-    $words = addslashes($_POST['moreWords']);
+    $word = ($_POST['word']);
+    $words = ($_POST['moreWords']);
     $checkbox = (isset($_POST['yesNo'])) ? 1: 0;
-    $id = addslashes($_POST['userID']);
+    $id = ($_POST['userID']);
 };
 
-
-
-function addWordsToDB ($col1, $col2, $col3, $col4) {
+function addWordsToDB () {
     $dsn = 'mysql:dbname=myWords;host=mysql';
     $user = 'developer';
     $password = 'developer';
-    $myVal =  'null' . ', ' . $col1 . ', "' . $col2 . '", "' . $col3 . '", ' . $col4 ;
-    $insertQuery = 'INSERT INTO webWords VALUES ' . '(' . $myVal . ');';
 
+    // Prepared statements below. There are three ways
 
     try {
         $dbh = new PDO($dsn, $user, $password);
 
+        $stmtForInsert = $dbh->prepare("INSERT INTO webWords VALUES (null, ?, ?, ?, ?)");
+
+        $stmtForInsert->bindParam(1, $pId);
+        $stmtForInsert->bindParam(2, $pWord);
+        $stmtForInsert->bindParam(3, $pWords);
+        $stmtForInsert->bindParam(4, $pCheckbox);
+        $pId = ($_POST['userID']);
+        $pWord = ($_POST['word']);
+        $pWords = ($_POST['moreWords']);
+        $pCheckbox = (isset($_POST['yesNo'])) ? 1: 0;
+        
+        $stmtForDuplicateCheck = $dbh->prepare("SELECT * FROM webWords WHERE personID=?");
+
+        $stmtForDuplicateCheck->bindParam(1, $submittedNumber, PDO::PARAM_STR);
         $submittedNumber = $_POST["userID"];
 
-        $dbIds = $dbh->query('SELECT * FROM webWords WHERE personID=' . $submittedNumber);
+        $stmtForDuplicateCheck->execute();
+        $rowCount = $stmtForDuplicateCheck->rowCount();
 
-        if ($dbIds->fetch() == false) {
-            $dbh->query($insertQuery);
+        if ( $rowCount == 0) {
+            $stmtForInsert->execute();
         } else {
              echo "Sorry, that number has been taken";
         }
-
+        
         /**
-         * The fetch() function essentially returns the sql query in a way that you can manage. More experimentation should be done.
+         * Here is a good example of a place where we might not want to use a prepared statement. Since there are no variables,
+         * it might not be necessary.
          */
-//        while ($row = $dbIds->fetch())
-//        {
-//            echo $row["personID"];
-//        }
-
         foreach( $dbh->query('SELECT * FROM webWords;') as $row) {
             printf("<tr><td> %s </td><td> %s </td><td> %s </td><td> %s </td></tr>",
                 htmlentities($row["personID"]),
                 htmlentities($row["personWord"]),
                 htmlentities($row["personMoreWords"]),
                 htmlentities($row["personLikeWords"]));
-
-//            print $row['primaryID'] . "\t";
-//            print $row['personID'] . "\t";
-//            print $row['personWord'] . "\t";
-//            print $row['personMoreWords'] . "\t";
-//            print $row['personLikeWords'] . "\n";
         }
 
     } catch (PDOException $e) {
