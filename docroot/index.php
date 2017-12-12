@@ -1,3 +1,6 @@
+<?php
+include 'header.php';
+?>
 <h1>Hello</h1>
 <form action="words.php" method="POST">
     <table cellpadding="12">

@@ -28,7 +28,6 @@ if (isset($_POST['yesNo'])) {
 
 if ($_POST['word'] == '' ) {
     echo "No word today?";
-    exit;
 } else {
     $word = ($_POST['word']);
     $words = ($_POST['moreWords']);
@@ -90,6 +89,8 @@ function addWordsToDB () {
     exit();
 }
 
+
+include 'header.php';
 ?>
 <table>
     <tbody>
