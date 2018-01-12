@@ -51,6 +51,7 @@ function addWordsToDB () {
         $stmtForInsert->bindParam(2, $pWord);
         $stmtForInsert->bindParam(3, $pWords);
         $stmtForInsert->bindParam(4, $pCheckbox);
+
         $pId = ($_POST['userID']);
         $pWord = ($_POST['word']);
         $pWords = ($_POST['moreWords']);
