@@ -13,6 +13,11 @@ $connect = new PDO($albumShareDB, $dbUser, $dbPassword);
 //                htmlentities($row["recommendationDate"]),
 //)};
 
+session_start();
+$_SESSION['currentUser'] = 1;
+
+echo $_SESSION['currentUser'];
+
 ?>
 <link rel="stylesheet" type="text/css" href="../src/styles/homepage.css">
 
@@ -45,7 +50,7 @@ $connect = new PDO($albumShareDB, $dbUser, $dbPassword);
     </section>
     <section class="share-album">
         <h3>Share an Album with Someone</h3>
-        <form action="addFriends.php" method="POST">
+        <form action="shareAlbum.php" method="POST">
             <p>Choose a friend</p>
             <select name="friend">
                 <option value="default">------</option>
