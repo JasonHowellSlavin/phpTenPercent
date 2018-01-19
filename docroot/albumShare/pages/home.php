@@ -1,10 +1,9 @@
 <?php
 
-$albumShareDB = 'mysql:dbname=albumShare;host=mysql';
-$dbUser = 'developer';
-$dbPassword = 'developer';
-
-$connect = new PDO($albumShareDB, $dbUser, $dbPassword);
+require '../code/pdoController.php';
+require '../code/dateAndTime.php';
+$connect = pdoController::connectToDB();
+session_start();
 
 //foreach($connect->query('SELECT * FROM userRecommendations WHERE recommendedTo = 1') as $row) {
 //                printf("<tr><td> %s </td><td> %s </td><td> %s </td></tr>",
@@ -13,10 +12,7 @@ $connect = new PDO($albumShareDB, $dbUser, $dbPassword);
 //                htmlentities($row["recommendationDate"]),
 //)};
 
-session_start();
 $_SESSION['currentUser'] = 1;
-
-echo $_SESSION['currentUser'];
 
 ?>
 <link rel="stylesheet" type="text/css" href="../src/styles/homepage.css">
@@ -24,7 +20,7 @@ echo $_SESSION['currentUser'];
 <article>
     <h1>AlbumShare</h1>
     <section class="recs-this-week">
-     <h3>Albums reccomended to you this week!</h3>
+     <h3>Albums reccomended to you this week!<?php echo "<p> Now" . time() . "</p><br>"; echo "<p> Today" . date('Y-m-d') . "</p><br>"; echo "<p>Today last week" . date('Y-m-d', strtotime("-1 week"))  . "</p><br>"?></h3>
         <table>
             <tbody>
             <tr>
@@ -33,6 +29,13 @@ echo $_SESSION['currentUser'];
                 <td>Date Reccomended</td>
             </tr>
             <?php
+            $today = strtotime(date('Y-m-d'));
+            $withinAWeek = strtotime(date('Y-m-d', strtotime("-1 week")));
+
+            if ($today < $withinAWeek) { echo "today is less than a week ago";}
+            if ( $today > $withinAWeek) { echo "today is greater than a week ago";}
+
+
             foreach( $connect->query("SELECT * FROM userRecommendations WHERE recommendedTo = 1;") as $row) {
                 printf("<tr><td>%s</td><td>%s</td><td>%s</td></tr>",
                     htmlentities($row["artist"]),

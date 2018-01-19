@@ -45,7 +45,9 @@ function addWordsToDB () {
     try {
         $dbh = new PDO($dsn, $user, $password);
 
-        $stmtForInsert = $dbh->prepare("INSERT INTO webWords VALUES (null, ?, ?, ?, ?)");
+        if (!($stmtForInsert = $dbh->prepare("INSERT INTO webWords VALUES (null, ?, ?, ?, ?)"))) {
+            echo "Prepare failed: "
+        }
 
         $stmtForInsert->bindParam(1, $pId);
         $stmtForInsert->bindParam(2, $pWord);

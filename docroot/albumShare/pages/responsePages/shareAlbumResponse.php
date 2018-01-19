@@ -1,30 +1,37 @@
 <?php
+require '../../code/pdoController.php';
 session_start();
-var_dump($_REQUEST);
-$number =  $_POST["f"];
-echo "<h1> Number or recs sent from previous page" . $number ."</h1>";
 
+$number =  $_POST["number-of-recs"];
+$friendIDNum = $_POST["friendID"];
+$sessionUserID = $_SESSION['currentUser'];
 
+$connect = pdoController::connectToDB();
 
-echo "<h1> Current USer" . $_SESSION['currentUser'] . "</h1>";
+if (!$connect) {
+    echo "Could not connect";
+};
 
-$albumShareDB = 'mysql:dbname=albumShare;host=mysql';
-$dbUser = 'developer';
-$dbPassword = 'developer';
+$addRecToDb = $connect->prepare("INSERT INTO userRecommendations VALUES (null, ?, ?, ? ,?, ?)");
 
-// Here is where I am taking the array passed from post and inserting the variable sinto the DB using the for loop. 
-
-$connect = new PDO($albumShareDB, $dbUser, $dbPassword);
-
-$addRecToDb = $connect->prepare("INSERT INTO userRecommendations VALUES (null, ?, ?, ? ,?)");
+$addRecToDb->bindParam(1, $currentUser);
+$addRecToDb->bindParam(2, $artist);
+$addRecToDb->bindParam(3, $album);
+$addRecToDb->bindParam(4, $recToID);
+$addRecToDb->bindParam(5, $date);
 
 for ($i = 0; $i < $number; $i++) {
-    $addRecToDb->bindParam(1, $_SESSION['currentUser']);
-    $addRecToDb->bindParam(2, $_POST["artistRec" . $i]);
-    $addRecToDb->bindParam(2, $_POST["artistRec" . $i]);
-    $addRecToDb->bindParam(2, $_POST["artistRec" . $i]);
-    $addRecToDb->bindParam(2, $_POST["artistRec" . $i]);
+    $currentUser = $sessionUserID;
+    $artist = $_POST["artistRec" . $i];
+    $album = $_POST["albumRec" . $i];
+    $recToID = $friendIDNum;
+    $date = date("Y-m-d");
+    $statmentExe = $addRecToDb->execute();
+
+    if (!$statmentExe) {
+        echo "Execture failed: "  . $addRecToDb->errorInfo();
+    }
 }
 
 
-//include "basicReponse.php";
+include "basicReponse.php";

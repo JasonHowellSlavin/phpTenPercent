@@ -1,14 +1,9 @@
 <?php
 session_start();
+require '../code/pdoController.php';
+$connect = pdoController::connectToDB();
+
 echo $_SESSION['currentUser'];
-
-$albumShareDB = 'mysql:dbname=albumShare;host=mysql';
-$dbUser = 'developer';
-$dbPassword = 'developer';
-
-$connect = new PDO($albumShareDB, $dbUser, $dbPassword);
-
-
 $friend = $_POST["friend"];
 $number = $_POST["number-of-recs"];
 
@@ -21,7 +16,8 @@ $friendName = $stmt->fetch()[0];
     <section>
         <h1>Your Recommendations for <?php echo $friendName ?></h1>
         <form name="recForm" action="./responsePages/shareAlbumResponse.php" method="POST">
-            <input type="hidden" name="f" value="<?php echo $number ?>" />
+            <input type="hidden" name="number-of-recs" value="<?php echo $number ?>" />
+            <input type="hidden" name="friendID" value="<?php echo $friend ?>"
             <?php
             for ($i = 0; $i < $number; $i++) {
                 include "./includes/shareAlbumForm.php";
