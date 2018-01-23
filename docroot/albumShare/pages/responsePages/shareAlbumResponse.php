@@ -4,7 +4,10 @@ session_start();
 
 $number =  $_POST["number-of-recs"];
 $friendIDNum = $_POST["friendID"];
-$sessionUserID = $_SESSION['currentUser'];
+
+$name = (!empty($_SESSION["userName"])) ? $_SESSION["userName"] : "";
+$id = (!empty($_SESSION["userId"])) ? $_SESSION["userId"] : "";
+$email = (!empty($_SESSION["userEmail"])) ? $_SESSION["userEmail"] : "";
 
 $connect = pdoConnect::connectToDB();
 
@@ -21,17 +24,16 @@ $addRecToDb->bindParam(4, $recToID);
 $addRecToDb->bindParam(5, $date);
 
 for ($i = 0; $i < $number; $i++) {
-    $currentUser = $sessionUserID;
+    $currentUser = $id;
     $artist = $_POST["artistRec" . $i];
     $album = $_POST["albumRec" . $i];
     $recToID = $friendIDNum;
     $date = date("Y-m-d");
-    $statmentExe = $addRecToDb->execute();
+    $statementExe = $addRecToDb->execute();
 
-    if (!$statmentExe) {
-        echo "Execture failed: "  . $addRecToDb->errorInfo();
+    if (!$statementExe) {
+        echo "Execute failed: "  . $addRecToDb->errorInfo();
     }
 }
 
-
-include "basicReponse.php";
+include "basicResponse.php";

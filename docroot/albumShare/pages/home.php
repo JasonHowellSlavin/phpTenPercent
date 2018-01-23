@@ -1,26 +1,34 @@
 <?php
 
 require '../code/pdo.php';
-require '../code/dateAndTime.php';
 $connect = pdoConnect::connectToDB();
 session_start();
 
-//foreach($connect->query('SELECT * FROM userRecommendations WHERE recommendedTo = 1') as $row) {
-//                printf("<tr><td> %s </td><td> %s </td><td> %s </td></tr>",
-//                htmlentities($row["artist"]),
-//                htmlentities($row["album"]),
-//                htmlentities($row["recommendationDate"]),
-//)};
 
-$_SESSION['currentUser'] = 1;
+if (!isset($_SESSION["userName"]) || empty($_SESSION['userName'])) {
+    header("Location: ../loginPages/initialLogin.php");
+    exit;
+}
+
+$name = $_SESSION["userName"];
+$id = $_SESSION["userId"];
+$email = (!empty($_SESSION["userEmail"])) ? $_SESSION["userEmail"] : '';
 
 ?>
 <link rel="stylesheet" type="text/css" href="../src/styles/homepage.css">
 
 <article>
-    <h1>AlbumShare</h1>
+    <section>
+        <h1>AlbumShare</h1>
+        <section class="user-panel">
+            <h3><a href="userActions/logout.php">Logout</a></h3>
+            <h3><a href="userActions/changePassword.php">Change Password</a></h3>
+        </section>
+    </section>
+
     <section class="recs-this-week">
-     <h3>Albums reccomended to you this week!<?php echo "<p> Now" . time() . "</p><br>"; echo "<p> Today" . date('Y-m-d') . "</p><br>"; echo "<p>Today last week" . date('Y-m-d', strtotime("-1 week"))  . "</p><br>"?></h3>
+        <h2>Welcome <?php echo $name ?></h2>
+         <h3>Albums reccomended to you this week!</h3>
         <table>
             <tbody>
             <tr>
@@ -29,14 +37,8 @@ $_SESSION['currentUser'] = 1;
                 <td>Date Reccomended</td>
             </tr>
             <?php
-            $today = strtotime(date('Y-m-d'));
-            $withinAWeek = strtotime(date('Y-m-d', strtotime("-1 week")));
-
-            if ($today < $withinAWeek) { echo "today is less than a week ago";}
-            if ( $today > $withinAWeek) { echo "today is greater than a week ago";}
-
-
-            foreach( $connect->query("SELECT * FROM userRecommendations WHERE recommendedTo = 1;") as $row) {
+            $withinAWeek = date('Y-m-d', strtotime("-8 days"));
+            foreach( $connect->query("SELECT * FROM userRecommendations WHERE recommendedTo = $id AND recommendationDate > '$withinAWeek';") as $row) {
                 printf("<tr><td>%s</td><td>%s</td><td>%s</td></tr>",
                     htmlentities($row["artist"]),
                     htmlentities($row["album"]),
@@ -45,11 +47,10 @@ $_SESSION['currentUser'] = 1;
             ?>
             </tbody>
         </table>
+        <h5><a href="allReccomendations.php">See all albums you've been recommended!</a></h5>
     </section>
     <section class="add-friend">
-        <h3>Add a friend</h3>
-        <input type="text" name="friendSearch">
-        <label for="friendSearch"> Search for and Add a Friend!</label>
+        <h3>Under Construction</h3>
     </section>
     <section class="share-album">
         <h3>Share an Album with Someone</h3>
@@ -57,13 +58,11 @@ $_SESSION['currentUser'] = 1;
             <p>Choose a friend</p>
             <select name="friend">
                 <option value="default">------</option>
-                <option value="deafult2">default</option>
                 <?php
                 foreach( $connect->query("SELECT * FROM users;") as $row) {
-                    printf("<option value='%s'>%s %s</option>",
+                    printf("<option value='%s'>%s</option>",
                         htmlentities($row["userId"]),
-                        htmlentities($row["userNameFirst"]),
-                        htmlentities($row["userNameLast"]));
+                        htmlentities($row["userName"]));
                 };
                 ?>
             </select>

@@ -5,6 +5,8 @@ $connect = pdoConnect::connectToDB();
 $email = $password = "";
 $emailErr = $passwordErr = "";
 $thisID = "";
+$hashedPassword = "";
+$userName = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" ) {
 
@@ -23,20 +25,43 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" ) {
     if (empty($emailErr) && empty($passwordErr)) {
         // we have to check if the user is in the db
 
-        $userIdQuery = "SELECT * FROM users WHERE userEmail = '" . trim($_POST["email"]) . "';";
+        $userIdQuery = "SELECT * FROM users WHERE userEmail = ?;";
         if ($userStmt = $connect->prepare($userIdQuery)) {
             $userStmt->bindParam(1, $userEmail);
             $userEmail = trim($_POST["email"]);
 
             if ($userStmt->execute()) {
-                $thisID = $userStmt->fetch()["userId"];
-                print_r($thisID);
+                $userArray = $userStmt->fetchAll();
+                $thisID = $userArray[0]["userId"];
+                $userName = $userArray[0]["userName"];
             } else {
                 echo "Fuck! We fucked up somewhere";
             }
         }
 
-        $passWordStmt = $connect->prepare("SELECT * FROM userPasswords WHERE userID = ?");
+        $passWordQuery = "SELECT * FROM userPasswords WHERE userID = ?";
+        if ($passWordStmt = $connect->prepare($passWordQuery)) {
+            $passWordStmt->bindParam(1, $usersID);
+            $usersID = $thisID;
+
+            if ($passWordStmt->execute()) {
+                $hashedPassword = $passWordStmt->fetch()["userPassword"];
+                print_r($hashedPassword);
+            } else {
+                echo "Oh shit, we couldn't find that shit";
+            }
+        }
+
+        if (password_verify($password, $hashedPassword)) {
+            echo "That shit matches";
+            session_start();
+            $_SESSION["userName"] = $userName;
+            $_SESSION["userId"] = $thisID;
+            $_SESSION["userEmail"] = $userEmail;
+            header("Location: ../home.php");
+        } else {
+            echo "You entered it wrong";
+        }
 
 
 
