@@ -5,7 +5,7 @@
  * Date: 1/11/18
  * Time: 5:48 PM
  */
-final class pdoController {
+final class pdoConnect {
 
     public static function connectToDB ()
     {

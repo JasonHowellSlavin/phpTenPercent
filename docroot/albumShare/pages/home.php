@@ -1,8 +1,8 @@
 <?php
 
-require '../code/pdoController.php';
+require '../code/pdo.php';
 require '../code/dateAndTime.php';
-$connect = pdoController::connectToDB();
+$connect = pdoConnect::connectToDB();
 session_start();
 
 //foreach($connect->query('SELECT * FROM userRecommendations WHERE recommendedTo = 1') as $row) {

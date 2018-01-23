@@ -1,12 +1,12 @@
 <?php
-require '../../code/pdoController.php';
+require '../../code/pdo.php';
 session_start();
 
 $number =  $_POST["number-of-recs"];
 $friendIDNum = $_POST["friendID"];
 $sessionUserID = $_SESSION['currentUser'];
 
-$connect = pdoController::connectToDB();
+$connect = pdoConnect::connectToDB();
 
 if (!$connect) {
     echo "Could not connect";

@@ -1,7 +1,7 @@
 <?php
 session_start();
-require '../code/pdoController.php';
-$connect = pdoController::connectToDB();
+require '../code/pdo.php';
+$connect = pdo::connectToDB();
 
 echo $_SESSION['currentUser'];
 $friend = $_POST["friend"];
