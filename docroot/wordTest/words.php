@@ -28,7 +28,6 @@ if (isset($_POST['yesNo'])) {
 
 if ($_POST['word'] == '' ) {
     echo "No word today?";
-    exit;
 } else {
     $word = ($_POST['word']);
     $words = ($_POST['moreWords']);
@@ -46,12 +45,15 @@ function addWordsToDB () {
     try {
         $dbh = new PDO($dsn, $user, $password);
 
-        $stmtForInsert = $dbh->prepare("INSERT INTO webWords VALUES (null, ?, ?, ?, ?)");
+        if (!($stmtForInsert = $dbh->prepare("INSERT INTO webWords VALUES (null, ?, ?, ?, ?)"))) {
+            echo "Prepare failed: "
+        }
 
         $stmtForInsert->bindParam(1, $pId);
         $stmtForInsert->bindParam(2, $pWord);
         $stmtForInsert->bindParam(3, $pWords);
         $stmtForInsert->bindParam(4, $pCheckbox);
+
         $pId = ($_POST['userID']);
         $pWord = ($_POST['word']);
         $pWords = ($_POST['moreWords']);
@@ -90,6 +92,8 @@ function addWordsToDB () {
     exit();
 }
 
+
+include 'header.php';
 ?>
 <table>
     <tbody>

@@ -35,3 +35,21 @@ try {
 }
 
 exit();
+
+/**
+ * Apparently there are stored precedures in SQL, that can be called via a query or prepaired statement. For example, if
+ * wanted to return all words that had the letter R in them, i could put the procedure in mySQL with the following below:
+ *
+ * USE 'myWords';
+ * CREATE FUNCTION 'return_letter' (letter)
+ * RETURNS INTEGER
+ * BEGIN
+ * return (select count(*) from books where personWord regexp 'letter';
+ * END
+ *
+ *  $stmt = $db->prepare("return_letter(?)");
+ *  $stmt->execute(array('r'));
+ *  printf("No. of words with r = %d\n", $stmt->fetchColumn());
+ *
+ *
+ */

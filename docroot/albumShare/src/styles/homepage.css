@@ -1,0 +1,16 @@
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+article section {
+    border: 2px solid black;
+    padding: 40px;
+}
+
+td {
+    border-left: 2px solid lightgray;
+    padding: 10px 5px;
+}
