@@ -4,6 +4,7 @@
 <?php
 
 try {
+    echo 'Success';
     $albumShareDB = "mysql:dbname=albumShare;host=localhost";
     $dbUser = "root";
     $dbPassword = "developer";

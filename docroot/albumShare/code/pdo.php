@@ -9,7 +9,7 @@ final class pdoConnect {
 
     public static function connectToDB ()
     {
-        $albumShareDB = "mysql:dbname=albumShare;host=mysql";
+        $albumShareDB = "mysql:dbname=albumShare;host=localhost";
         $dbUser = "root";
         $dbPassword = "developer";
 
