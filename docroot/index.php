@@ -1,7 +1,10 @@
 
 <h1>Hello</h1>
 
+
 <?php
+
+echo "<h2>Server Name: " . $_SERVER['SERVER_NAME'] . "</h2>";
 
 try {
     echo 'Success';
