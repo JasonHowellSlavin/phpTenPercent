@@ -46,7 +46,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" ) {
 
             if ($passWordStmt->execute()) {
                 $hashedPassword = $passWordStmt->fetch()["userPassword"];
-                print_r($hashedPassword);
             } else {
                 echo "Oh shit, we couldn't find that shit";
             }

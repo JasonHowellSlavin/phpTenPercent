@@ -6,12 +6,21 @@
  * Time: 5:48 PM
  */
 final class pdoConnect {
-
     public static function connectToDB ()
     {
-        $albumShareDB = "mysql:dbname=albumShare;host=localhost";
-        $dbUser = "root";
-        $dbPassword = "Whitman1855";
+        $serverName = trim($_SERVER['SERVER_NAME']);
+
+        if (strpos($serverName, 'localhost') !== false) {
+            $hostDB = "mysql";
+            $dbPassword = "developer";
+            $dbUser = "developer";
+        } else {
+            $hostDB = "localhost";
+            $dbPassword = "Whitman1855";
+            $dbUser = "root";
+        }
+
+        $albumShareDB = "mysql:dbname=albumShare;host=" . $hostDB;
 
         $connection = new PDO($albumShareDB, $dbUser, $dbPassword);
 

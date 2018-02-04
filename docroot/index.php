@@ -3,14 +3,29 @@
 
 
 <?php
+$serverName = trim($_SERVER['SERVER_NAME']);
+echo "<h2>Server Name: " . $serverName . "</h2>";
 
-echo "<h2>Server Name: " . $_SERVER['SERVER_NAME'] . "</h2>";
+
+if (strpos($serverName, 'localhost') !== false) {
+
+} else {
+
+}
 
 try {
     echo 'Success';
-    $albumShareDB = "mysql:dbname=albumShare;host=localhost";
-    $dbUser = "root";
-    $dbPassword = "Whitman1855";
+    if (strpos($serverName, 'localhost') !== false) {
+        $hostDB = "mysql";
+        $dbPassword = "developer";
+        $dbUser = "developer";
+    } else {
+        $hostDB = "localhost";
+        $dbPassword = "Whitman1855";
+        $dbUser = "root";
+    }
+
+    $albumShareDB = "mysql:dbname=albumShare;host=" . $hostDB;
 
     $connection = new PDO($albumShareDB, $dbUser, $dbPassword);
 } catch (PDOException $e) {

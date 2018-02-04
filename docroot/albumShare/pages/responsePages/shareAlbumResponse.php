@@ -15,13 +15,14 @@ if (!$connect) {
     echo "Could not connect";
 };
 
-$addRecToDb = $connect->prepare("INSERT INTO userRecommendations VALUES (null, ?, ?, ? ,?, ?)");
+$addRecToDb = $connect->prepare("INSERT INTO userRecommendations VALUES (null, ?, ?, ? ,?, ?, ?)");
 
 $addRecToDb->bindParam(1, $currentUser);
 $addRecToDb->bindParam(2, $artist);
 $addRecToDb->bindParam(3, $album);
 $addRecToDb->bindParam(4, $recToID);
 $addRecToDb->bindParam(5, $date);
+$addRecToDb->bindParam(6,$theme);
 
 for ($i = 0; $i < $number; $i++) {
     $currentUser = $id;
@@ -29,6 +30,7 @@ for ($i = 0; $i < $number; $i++) {
     $album = $_POST["albumRec" . $i];
     $recToID = $friendIDNum;
     $date = date("Y-m-d");
+    $theme = $_POST['theme'];
     $statementExe = $addRecToDb->execute();
 
     if (!$statementExe) {

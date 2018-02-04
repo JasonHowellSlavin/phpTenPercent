@@ -5,7 +5,6 @@
  * Date: 1/11/18
  * Time: 2:24 PM
  */
-echo "jive turkey";
 
 require '../code/pdo.php';
 $connect = pdoConnect::connectToDB();
@@ -34,11 +33,13 @@ $email = (!empty($_SESSION["userEmail"])) ? $_SESSION["userEmail"] : "";
 
     $recommendationStmt->execute();
     foreach ($recommendationStmt->fetchAll() as $row) {
-        printf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>",
+        printf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>",
         htmlentities($row["artist"]),
         htmlentities($row["album"]),
         htmlentities($row["recommendationDate"]),
-        htmlentities($row["userName"]));
+        htmlentities($row["userName"]),
+        '<h1>hurrah</h1>');
+
     }
 
 
