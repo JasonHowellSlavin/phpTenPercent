@@ -7,7 +7,7 @@ try {
     echo 'Success';
     $albumShareDB = "mysql:dbname=albumShare;host=localhost";
     $dbUser = "root";
-    $dbPassword = "developer";
+    $dbPassword = "Whitman1855";
 
     $connection = new PDO($albumShareDB, $dbUser, $dbPassword);
 } catch (PDOException $e) {
