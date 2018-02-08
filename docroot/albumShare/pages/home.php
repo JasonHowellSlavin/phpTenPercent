@@ -34,16 +34,33 @@ $email = (!empty($_SESSION["userEmail"])) ? $_SESSION["userEmail"] : '';
             <tr>
                 <td>Artist</td>
                 <td>Album</td>
-                <td>Date Reccomended</td>
+                <td>Date Recommended</td>
+                <td>Recommended By</td>
+                <td>Theme</td>
             </tr>
             <?php
             $withinAWeek = date('Y-m-d', strtotime("-8 days"));
-            foreach( $connect->query("SELECT * FROM userRecommendations WHERE recommendedTo = $id AND recommendationDate > '$withinAWeek';") as $row) {
-                printf("<tr><td>%s</td><td>%s</td><td>%s</td></tr>",
+            $recommendationQuery = "SELECT userRecommendations.artist, userRecommendations.album,
+                            userRecommendations.recommendationDate,
+                            users.userName, userRecommendations.theme
+                            FROM userRecommendations
+                            JOIN users ON userRecommendations.userId = users.userId
+                            AND userRecommendations.recommendedTo = ? 
+                            WHERE userRecommendations.recommendationDate > '$withinAWeek'";
+            $recommendationStmt = $connect->prepare($recommendationQuery);
+            $recommendationStmt->bindParam(1, $currentUserId);
+            $currentUserId = $id;
+
+            $recommendationStmt->execute();
+            foreach ($recommendationStmt->fetchAll() as $row) {
+                printf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>",
                     htmlentities($row["artist"]),
                     htmlentities($row["album"]),
-                    htmlentities($row["recommendationDate"]));
-            };
+                    htmlentities($row["recommendationDate"]),
+                    htmlentities($row["userName"]),
+                    htmlentities($row["theme"]));
+
+            }
             ?>
             </tbody>
         </table>

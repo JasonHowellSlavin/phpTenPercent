@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9de31fdd-6bcd-40cc-a195-6c0195006116" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/docroot/albumShare/pages/userActions/logout.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/docroot/albumShare/code/email/emailNewRecs.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/docroot/albumShare/pages/userActions/changeDetails.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/localhost.iml" afterPath="$PROJECT_DIR$/.idea/localhost.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/docroot/albumShare/code/dateAndTime.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/docroot/albumShare/pages/allReccomendations.php" afterPath="$PROJECT_DIR$/docroot/albumShare/pages/allReccomendations.php" />
       <change beforePath="$PROJECT_DIR$/docroot/albumShare/pages/home.php" afterPath="$PROJECT_DIR$/docroot/albumShare/pages/home.php" />
-      <change beforePath="$PROJECT_DIR$/docroot/albumShare/pages/includes/loginForm.php" afterPath="$PROJECT_DIR$/docroot/albumShare/pages/includes/loginForm.php" />
-      <change beforePath="$PROJECT_DIR$/docroot/albumShare/pages/login.php" afterPath="$PROJECT_DIR$/docroot/albumShare/pages/userActions/changePassword.php" />
-      <change beforePath="$PROJECT_DIR$/docroot/albumShare/pages/loginPages/createAccount.php" afterPath="$PROJECT_DIR$/docroot/albumShare/pages/loginPages/createAccount.php" />
-      <change beforePath="$PROJECT_DIR$/docroot/albumShare/pages/loginPages/initialLogin.php" afterPath="$PROJECT_DIR$/docroot/albumShare/pages/loginPages/initialLogin.php" />
-      <change beforePath="$PROJECT_DIR$/docroot/albumShare/pages/responsePages/basicReponse.php" afterPath="$PROJECT_DIR$/docroot/albumShare/pages/responsePages/basicResponse.php" />
-      <change beforePath="$PROJECT_DIR$/docroot/albumShare/pages/responsePages/shareAlbumResponse.php" afterPath="$PROJECT_DIR$/docroot/albumShare/pages/responsePages/shareAlbumResponse.php" />
-      <change beforePath="$PROJECT_DIR$/docroot/albumShare/pages/shareAlbum.php" afterPath="$PROJECT_DIR$/docroot/albumShare/pages/shareAlbum.php" />
-      <change beforePath="$PROJECT_DIR$/docroot/albumShare/pages/shareAlbumForm.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docroot/albumShare/pages/responsePages/basicResponse.php" afterPath="$PROJECT_DIR$/docroot/albumShare/pages/responsePages/basicResponse.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,7 +30,74 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="emailNewRecs.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docroot/albumShare/code/email/emailNewRecs.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="26" />
+              <folding>
+                <marker date="1518054233000" expanded="true" signature="490:1616" ph="..." />
+                <marker date="1518054233000" expanded="true" signature="490:1617" ph="..." />
+                <marker date="1518054233000" expanded="true" signature="501:572" ph="..." />
+                <marker date="1518054233000" expanded="true" signature="583:1616" ph="..." />
+                <marker date="1518054233000" expanded="true" signature="607:627" ph="..." />
+                <marker date="1518054233000" expanded="true" signature="628:1609" ph="..." />
+                <marker date="1518054233000" expanded="true" signature="649:1604" ph="..." />
+                <marker date="1518054233000" expanded="true" signature="670:751" ph="..." />
+                <marker date="1518054233000" expanded="true" signature="694:729" ph="..." />
+                <marker date="1518054233000" expanded="true" signature="772:894" ph="..." />
+                <marker date="1518054233000" expanded="true" signature="797:872" ph="..." />
+                <marker date="1518054233000" expanded="true" signature="915:1583" ph="..." />
+                <marker date="1518054233000" expanded="true" signature="941:1561" ph="..." />
+                <marker date="1518054233000" expanded="true" signature="1009:1535" ph="..." />
+                <marker date="1518054233000" expanded="true" signature="1042:1299" ph="..." />
+                <marker date="1518054233000" expanded="true" signature="1078:1154" ph="..." />
+                <marker date="1518054233000" expanded="true" signature="1190:1265" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="changeDetails.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/userActions/changeDetails.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+              <folding>
+                <marker date="1518057503000" expanded="true" signature="387:526" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="changePassword.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/userActions/changePassword.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="13" column="44" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="44" />
+              <folding>
+                <marker date="1517532013000" expanded="true" signature="953:1008" ph="SELECT userP... userPasswords" />
+                <marker date="1517532013000" expanded="true" signature="1522:1580" ph="UPDATE userPasswords... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+              <folding>
+                <marker date="1518052362000" expanded="true" signature="1212:1709" ph="SELECT userR... userRecommendations" />
+                <marker date="1518052362000" expanded="true" signature="2930:2949" ph="SELECT * FRO... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -73,7 +134,6 @@
         <option value="$PROJECT_DIR$/docroot/myAPI.php" />
         <option value="$PROJECT_DIR$/docroot/api.php" />
         <option value="$PROJECT_DIR$/docroot/pages/wordsHome.php" />
-        <option value="$PROJECT_DIR$/docroot/index.php" />
         <option value="$PROJECT_DIR$/vendor/webonyx/graphql-php/examples/01-blog/graphql.php" />
         <option value="$PROJECT_DIR$/docroot/endpoints/graphql.php" />
         <option value="$PROJECT_DIR$/docroot/graphql.php" />
@@ -87,18 +147,22 @@
         <option value="$PROJECT_DIR$/docroot/wordTest/wordsHome.php" />
         <option value="$PROJECT_DIR$/docroot/albumShare/code/pdoController.php" />
         <option value="$PROJECT_DIR$/docroot/albumShare/code/dateAndTime.php" />
-        <option value="$PROJECT_DIR$/docroot/.htaccess" />
-        <option value="$PROJECT_DIR$/docroot/albumShare/code/pdo.php" />
         <option value="$PROJECT_DIR$/docroot/albumShare/pages/loginPages/createAccount.php" />
-        <option value="$PROJECT_DIR$/docroot/albumShare/pages/loginPages/initialLogin.php" />
         <option value="$PROJECT_DIR$/docroot/albumShare/pages/loginPages/logout.php" />
-        <option value="$PROJECT_DIR$/docroot/albumShare/pages/shareAlbum.php" />
         <option value="$PROJECT_DIR$/docroot/albumShare/pages/userActions/logout.php" />
         <option value="$PROJECT_DIR$/docroot/albumShare/pages/includes/loginForm.php" />
         <option value="$PROJECT_DIR$/docroot/albumShare/pages/userActions/changePassword.php" />
-        <option value="$PROJECT_DIR$/docroot/albumShare/pages/home.php" />
-        <option value="$PROJECT_DIR$/docroot/albumShare/pages/allReccomendations.php" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/pages/loginPages/initialLogin.php" />
+        <option value="$PROJECT_DIR$/docroot/index.php" />
+        <option value="$PROJECT_DIR$/docroot/.htaccess" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/code/pdo.php" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/pages/shareAlbum.php" />
         <option value="$PROJECT_DIR$/docroot/albumShare/pages/responsePages/shareAlbumResponse.php" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/pages/responsePages/basicResponse.php" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/pages/allReccomendations.php" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/pages/home.php" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/code/email/emailNewRecs.php" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/pages/userActions/changeDetails.php" />
       </list>
     </option>
   </component>
@@ -110,10 +174,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1681" />
+    <option name="x" value="1687" />
     <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1177" />
+    <option name="width" value="1485" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -133,6 +197,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -171,30 +236,6 @@
               <item name="docroot" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="albumShare" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="includes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="localhost" type="b2602c69:ProjectViewProjectNode" />
-              <item name="localhost" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="docroot" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="albumShare" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="loginPages" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="localhost" type="b2602c69:ProjectViewProjectNode" />
-              <item name="localhost" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="docroot" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="albumShare" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="responsePages" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="localhost" type="b2602c69:ProjectViewProjectNode" />
-              <item name="localhost" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="docroot" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="albumShare" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="userActions" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -202,7 +243,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -257,32 +297,35 @@
       <workItem from="1513812117347" duration="5932000" />
       <workItem from="1515607539929" duration="28835000" />
       <workItem from="1516210619066" duration="42448000" />
+      <workItem from="1517623808623" duration="7654000" />
+      <workItem from="1517949302374" duration="5538000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111020000" />
+    <option name="totallyTimeSpent" value="125439000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1681" y="23" width="1920" height="1177" extended-state="0" />
+    <frame x="1687" y="23" width="1485" height="1057" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24174654" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20928621" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -318,10 +361,6 @@
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/docroot/wordTest/testAndNotes.php</url>
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/docroot/albumShare/pages/responsePages/shareAlbumResponse.php</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="2" />
     </breakpoint-manager>
@@ -330,53 +369,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/docroot/wordTest/testAndNotes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-          <folding>
-            <marker date="1513043316000" expanded="true" signature="634:665" ph="INSERT INTO words... " />
-            <marker date="1513043316000" expanded="true" signature="634:668" ph="INSERT INTO words... " />
-            <marker date="1513043316000" expanded="true" signature="634:680" ph="INSERT INTO words... " />
-            <marker date="1513043316000" expanded="true" signature="787:809" ph="SELECT * FRO... webWords" />
-            <marker date="1513043316000" expanded="true" signature="793:794" ph="select * fro... words" />
-            <marker date="1513043316000" expanded="true" signature="793:802" ph="select * FRO... words" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/wordTest/words.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
-          <folding>
-            <marker date="1515865372000" expanded="true" signature="896:941" ph="INSERT INTO webWords... " />
-            <marker date="1515865372000" expanded="true" signature="896:942" ph="INSERT INTO webWords... " />
-            <marker date="1515865372000" expanded="true" signature="1406:1444" ph="SELECT * FRO... webWords" />
-            <marker date="1515865372000" expanded="true" signature="1406:1445" ph="SELECT * FRO... webWords" />
-            <marker date="1515865372000" expanded="true" signature="1406:1447" ph="SELECT * FRO... webWords" />
-            <marker date="1515865372000" expanded="true" signature="2057:2079" ph="SELECT * FRO... webWords" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="53" lean-forward="false" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/wordTest/testAndNotes.php">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
           <folding>
-            <marker date="1513043316000" expanded="true" signature="634:665" ph="INSERT INTO words... " />
-            <marker date="1513043316000" expanded="true" signature="634:668" ph="INSERT INTO words... " />
-            <marker date="1513043316000" expanded="true" signature="634:680" ph="INSERT INTO words... " />
-            <marker date="1513043316000" expanded="true" signature="787:809" ph="SELECT * FRO... webWords" />
-            <marker date="1513043316000" expanded="true" signature="793:794" ph="select * fro... words" />
-            <marker date="1513043316000" expanded="true" signature="793:802" ph="select * FRO... words" />
+            <marker date="1517532013000" expanded="true" signature="634:680" ph="INSERT INTO words... " />
+            <marker date="1517532013000" expanded="true" signature="787:809" ph="SELECT * FRO... webWords" />
           </folding>
         </state>
       </provider>
@@ -386,12 +383,8 @@
         <state relative-caret-position="135">
           <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
           <folding>
-            <marker date="1513043316000" expanded="true" signature="634:665" ph="INSERT INTO words... " />
-            <marker date="1513043316000" expanded="true" signature="634:668" ph="INSERT INTO words... " />
-            <marker date="1513043316000" expanded="true" signature="634:680" ph="INSERT INTO words... " />
-            <marker date="1513043316000" expanded="true" signature="787:809" ph="SELECT * FRO... webWords" />
-            <marker date="1513043316000" expanded="true" signature="793:794" ph="select * fro... words" />
-            <marker date="1513043316000" expanded="true" signature="793:802" ph="select * FRO... words" />
+            <marker date="1517532013000" expanded="true" signature="634:680" ph="INSERT INTO words... " />
+            <marker date="1517532013000" expanded="true" signature="787:809" ph="SELECT * FRO... webWords" />
           </folding>
         </state>
       </provider>
@@ -408,14 +401,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding>
-            <marker date="1515865372000" expanded="true" signature="896:941" ph="INSERT INTO webWords... " />
-            <marker date="1515865372000" expanded="true" signature="896:942" ph="INSERT INTO webWords... " />
-            <marker date="1515865372000" expanded="true" signature="1406:1444" ph="SELECT * FRO... webWords" />
-            <marker date="1515865372000" expanded="true" signature="1406:1445" ph="SELECT * FRO... webWords" />
-            <marker date="1515865372000" expanded="true" signature="1406:1447" ph="SELECT * FRO... webWords" />
-            <marker date="1515865372000" expanded="true" signature="2057:2079" ph="SELECT * FRO... webWords" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -431,14 +416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-          <folding>
-            <marker date="1515865372000" expanded="true" signature="896:941" ph="INSERT INTO webWords... " />
-            <marker date="1515865372000" expanded="true" signature="896:942" ph="INSERT INTO webWords... " />
-            <marker date="1515865372000" expanded="true" signature="1406:1444" ph="SELECT * FRO... webWords" />
-            <marker date="1515865372000" expanded="true" signature="1406:1445" ph="SELECT * FRO... webWords" />
-            <marker date="1515865372000" expanded="true" signature="1406:1447" ph="SELECT * FRO... webWords" />
-            <marker date="1515865372000" expanded="true" signature="2057:2079" ph="SELECT * FRO... webWords" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -447,12 +424,8 @@
         <state relative-caret-position="255">
           <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
           <folding>
-            <marker date="1513043316000" expanded="true" signature="634:665" ph="INSERT INTO words... " />
-            <marker date="1513043316000" expanded="true" signature="634:668" ph="INSERT INTO words... " />
-            <marker date="1513043316000" expanded="true" signature="634:680" ph="INSERT INTO words... " />
-            <marker date="1513043316000" expanded="true" signature="787:809" ph="SELECT * FRO... webWords" />
-            <marker date="1513043316000" expanded="true" signature="793:794" ph="select * fro... words" />
-            <marker date="1513043316000" expanded="true" signature="793:802" ph="select * FRO... words" />
+            <marker date="1517532013000" expanded="true" signature="634:680" ph="INSERT INTO words... " />
+            <marker date="1517532013000" expanded="true" signature="787:809" ph="SELECT * FRO... webWords" />
           </folding>
         </state>
       </provider>
@@ -461,14 +434,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
-          <folding>
-            <marker date="1515865372000" expanded="true" signature="896:941" ph="INSERT INTO webWords... " />
-            <marker date="1515865372000" expanded="true" signature="896:942" ph="INSERT INTO webWords... " />
-            <marker date="1515865372000" expanded="true" signature="1406:1444" ph="SELECT * FRO... webWords" />
-            <marker date="1515865372000" expanded="true" signature="1406:1445" ph="SELECT * FRO... webWords" />
-            <marker date="1515865372000" expanded="true" signature="1406:1447" ph="SELECT * FRO... webWords" />
-            <marker date="1515865372000" expanded="true" signature="2057:2079" ph="SELECT * FRO... webWords" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -485,12 +450,8 @@
         <state relative-caret-position="315">
           <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
           <folding>
-            <marker date="1513043316000" expanded="true" signature="634:665" ph="INSERT INTO words... " />
-            <marker date="1513043316000" expanded="true" signature="634:668" ph="INSERT INTO words... " />
-            <marker date="1513043316000" expanded="true" signature="634:680" ph="INSERT INTO words... " />
-            <marker date="1513043316000" expanded="true" signature="787:809" ph="SELECT * FRO... webWords" />
-            <marker date="1513043316000" expanded="true" signature="793:794" ph="select * fro... words" />
-            <marker date="1513043316000" expanded="true" signature="793:802" ph="select * FRO... words" />
+            <marker date="1517532013000" expanded="true" signature="634:680" ph="INSERT INTO words... " />
+            <marker date="1517532013000" expanded="true" signature="787:809" ph="SELECT * FRO... webWords" />
           </folding>
         </state>
       </provider>
@@ -506,7 +467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -521,7 +481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -536,39 +495,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docroot/graphql.php" />
-    <entry file="file://$PROJECT_DIR$/docroot/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/wordTest/testAndNotes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="51" column="63" lean-forward="false" selection-start-line="51" selection-start-column="63" selection-end-line="51" selection-end-column="63" />
-          <folding>
-            <marker date="1513043316000" expanded="true" signature="634:665" ph="INSERT INTO words... " />
-            <marker date="1513043316000" expanded="true" signature="634:668" ph="INSERT INTO words... " />
-            <marker date="1513043316000" expanded="true" signature="634:680" ph="INSERT INTO words... " />
-            <marker date="1513043316000" expanded="true" signature="787:809" ph="SELECT * FRO... webWords" />
-            <marker date="1513043316000" expanded="true" signature="793:794" ph="select * fro... words" />
-            <marker date="1513043316000" expanded="true" signature="793:802" ph="select * FRO... words" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docroot/wordTest/tester.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -576,7 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -584,7 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -592,7 +524,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -600,7 +531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -608,109 +538,80 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/code/dateAndTime.php" />
+    <entry file="file://$PROJECT_DIR$/docroot/wordTest/words.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/login.php" />
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/userActions/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/shareAlbumForm.php" />
+    <entry file="file://$PROJECT_DIR$/docroot/wordTest/testAndNotes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="33" column="50" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="33" selection-end-column="50" />
           <folding>
-            <marker date="1516215360000" expanded="true" signature="129:222" ph="..." />
-            <marker date="1516215360000" expanded="true" signature="142:222" ph="..." />
-            <marker date="1516215360000" expanded="true" signature="193:222" ph="..." />
-            <marker date="1516215360000" expanded="true" signature="288:362" ph="..." />
-            <marker date="1516215360000" expanded="true" signature="333:362" ph="..." />
-            <marker date="1516215360000" expanded="true" signature="426:512" ph="..." />
-            <marker date="1516215360000" expanded="true" signature="480:512" ph="..." />
-            <marker date="1516215360000" expanded="true" signature="580:666" ph="..." />
-            <marker date="1516215360000" expanded="true" signature="637:666" ph="..." />
-            <marker date="1516215360000" expanded="true" signature="735:803" ph="..." />
-            <marker date="1516215360000" expanded="true" signature="774:803" ph="..." />
+            <marker date="1517532013000" expanded="true" signature="634:680" ph="INSERT INTO words... " />
+            <marker date="1517532013000" expanded="true" signature="787:809" ph="SELECT * FRO... webWords" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/.htaccess">
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/includes/loginForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="69" />
-          <folding />
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/code/dateAndTime.php">
+    <entry file="file://$PROJECT_DIR$/docroot/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docroot/albumShare/code/pdo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        <state relative-caret-position="150">
+          <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/wordTest/words.php">
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/loginPages/createAccount.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          <folding>
-            <marker date="1515865372000" expanded="true" signature="896:941" ph="INSERT INTO webWords... " />
-            <marker date="1515865372000" expanded="true" signature="896:942" ph="INSERT INTO webWords... " />
-            <marker date="1515865372000" expanded="true" signature="1406:1444" ph="SELECT * FRO... webWords" />
-            <marker date="1515865372000" expanded="true" signature="1406:1445" ph="SELECT * FRO... webWords" />
-            <marker date="1515865372000" expanded="true" signature="1406:1447" ph="SELECT * FRO... webWords" />
-            <marker date="1515865372000" expanded="true" signature="2057:2079" ph="SELECT * FRO... webWords" />
-          </folding>
+        <state relative-caret-position="780">
+          <caret line="95" column="29" lean-forward="false" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/login.php">
+    <entry file="file://$PROJECT_DIR$/docroot/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/code/email/emailNewRecs.ss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/userActions/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/responsePages/basicResponse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/shareAlbumForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/loginPages/initialLogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
-          <folding>
-            <marker date="1516729945000" expanded="true" signature="658:695" ph="SELECT * FRO... users" />
-            <marker date="1516729945000" expanded="true" signature="658:696" ph="SELECT * FRO... users" />
-            <marker date="1516729945000" expanded="true" signature="658:697" ph="SELECT * FRO... users" />
-            <marker date="1516729945000" expanded="true" signature="658:699" ph="SELECT * FRO... users" />
-            <marker date="1516729945000" expanded="true" signature="658:2022" ph="SELECT * FRO... users" />
-            <marker date="1516729945000" expanded="true" signature="658:2353" ph="SELECT * FRO... users" />
-            <marker date="1516729945000" expanded="true" signature="1181:1225" ph="SELECT * FRO... userPasswords" />
-            <marker date="1516729945000" expanded="true" signature="2367:2625" ph="..." />
-            <marker date="1516729945000" expanded="true" signature="2381:2444" ph="..." />
-            <marker date="1516729945000" expanded="true" signature="2381:2614" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -724,86 +625,108 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/shareAlbum.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+        <state relative-caret-position="375">
+          <caret line="25" column="44" lean-forward="false" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
           <folding>
-            <marker date="1516732107000" expanded="true" signature="212:284" ph="SELECT CONCA... users" />
+            <marker date="1517776661000" expanded="true" signature="181:253" ph="SELECT CONCA... users" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/home.php">
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/loginPages/initialLogin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="66" />
+        <state relative-caret-position="465">
+          <caret line="47" column="73" lean-forward="false" selection-start-line="47" selection-start-column="73" selection-end-line="47" selection-end-column="73" />
           <folding>
-            <marker date="1516745630000" expanded="true" signature="447:728" ph="..." />
-            <marker date="1516745630000" expanded="true" signature="861:1126" ph="..." />
-            <marker date="1516745630000" expanded="true" signature="881:1126" ph="..." />
-            <marker date="1516745630000" expanded="true" signature="898:1021" ph="..." />
-            <marker date="1516745630000" expanded="true" signature="1143:1199" ph="SELECT * FRO... userRecommendations" />
-            <marker date="1516745630000" expanded="true" signature="1143:1200" ph="SELECT * FRO... userRecommendations" />
-            <marker date="1516745630000" expanded="true" signature="1143:1203" ph="SELECT * FRO... userRecommendations" />
-            <marker date="1516745630000" expanded="true" signature="1143:1226" ph="SELECT * FRO... userRecommendations" />
-            <marker date="1516745630000" expanded="true" signature="1143:1242" ph="SELECT * FRO... userRecommendations" />
-            <marker date="1516745630000" expanded="true" signature="2071:2090" ph="SELECT * FRO... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/userActions/changePassword.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" column="1" lean-forward="false" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
-          <folding>
-            <marker date="1516744854000" expanded="true" signature="953:1008" ph="SELECT userP... userPasswords" />
-            <marker date="1516744854000" expanded="true" signature="1522:1580" ph="UPDATE userPasswords... " />
-            <marker date="1516744854000" expanded="true" signature="2550:2568" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/loginPages/createAccount.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="95" column="29" lean-forward="false" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
-          <folding>
-            <marker date="1516728174000" expanded="true" signature="609:652" ph="SELECT userI... users" />
-            <marker date="1516728174000" expanded="true" signature="609:653" ph="SELECT userI... users" />
-            <marker date="1516728174000" expanded="true" signature="2323:2360" ph="INSERT INTO users... " />
-            <marker date="1516728174000" expanded="true" signature="2394:2445" ph="INSERT INTO userPasswords... " />
-            <marker date="1516728174000" expanded="true" signature="2952:2990" ph="SELECT * FRO... users" />
-            <marker date="1516728174000" expanded="true" signature="2952:3021" ph="SELECT * FRO... users" />
-            <marker date="1516728174000" expanded="true" signature="3710:3796" ph="..." />
-            <marker date="1516728174000" expanded="true" signature="3724:3796" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/includes/loginForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/allReccomendations.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="15" selection-end-column="72" />
-          <folding>
-            <marker date="1516748118000" expanded="true" signature="593:916" ph="SELECT userR... userRecommendations" />
+            <marker date="1517768163000" expanded="true" signature="658:697" ph="SELECT * FRO... users" />
+            <marker date="1517768163000" expanded="true" signature="1181:1225" ph="SELECT * FRO... userPasswords" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/responsePages/shareAlbumResponse.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        <state relative-caret-position="480">
+          <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
           <folding>
-            <marker date="1516750527000" expanded="true" signature="458:518" ph="INSERT INTO userRecommendations... " />
+            <marker date="1517777630000" expanded="true" signature="458:521" ph="INSERT INTO userRecommendations... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/allReccomendations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <marker date="1518052329000" expanded="true" signature="596:1002" ph="SELECT userR... userRecommendations" />
+            <marker date="1518052329000" expanded="true" signature="596:1003" ph="SELECT userR... userRecommendations" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/responsePages/basicResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/code/email/emailNewRecs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="26" />
+          <folding>
+            <marker date="1518054233000" expanded="true" signature="490:1616" ph="..." />
+            <marker date="1518054233000" expanded="true" signature="490:1617" ph="..." />
+            <marker date="1518054233000" expanded="true" signature="501:572" ph="..." />
+            <marker date="1518054233000" expanded="true" signature="583:1616" ph="..." />
+            <marker date="1518054233000" expanded="true" signature="607:627" ph="..." />
+            <marker date="1518054233000" expanded="true" signature="628:1609" ph="..." />
+            <marker date="1518054233000" expanded="true" signature="649:1604" ph="..." />
+            <marker date="1518054233000" expanded="true" signature="670:751" ph="..." />
+            <marker date="1518054233000" expanded="true" signature="694:729" ph="..." />
+            <marker date="1518054233000" expanded="true" signature="772:894" ph="..." />
+            <marker date="1518054233000" expanded="true" signature="797:872" ph="..." />
+            <marker date="1518054233000" expanded="true" signature="915:1583" ph="..." />
+            <marker date="1518054233000" expanded="true" signature="941:1561" ph="..." />
+            <marker date="1518054233000" expanded="true" signature="1009:1535" ph="..." />
+            <marker date="1518054233000" expanded="true" signature="1042:1299" ph="..." />
+            <marker date="1518054233000" expanded="true" signature="1078:1154" ph="..." />
+            <marker date="1518054233000" expanded="true" signature="1190:1265" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <folding>
+            <marker date="1518052362000" expanded="true" signature="1212:1709" ph="SELECT userR... userRecommendations" />
+            <marker date="1518052362000" expanded="true" signature="2930:2949" ph="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/userActions/changePassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="13" column="44" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="44" />
+          <folding>
+            <marker date="1517532013000" expanded="true" signature="953:1008" ph="SELECT userP... userPasswords" />
+            <marker date="1517532013000" expanded="true" signature="1522:1580" ph="UPDATE userPasswords... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/userActions/changeDetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <marker date="1518057503000" expanded="true" signature="387:526" ph="..." />
           </folding>
         </state>
       </provider>

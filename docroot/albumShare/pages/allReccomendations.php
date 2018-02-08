@@ -21,12 +21,15 @@ $email = (!empty($_SESSION["userEmail"])) ? $_SESSION["userEmail"] : "";
         <td>Album</td>
         <td>Date Reccomended</td>
         <td>Recommended By</td>
+        <td>Theme</td>
     </tr>
     <?php
-    $recommendationQuery = "SELECT userRecommendations.artist, userRecommendations.album, userRecommendations.recommendationDate, users.userName
+    $recommendationQuery = "SELECT userRecommendations.artist, userRecommendations.album,
+                            userRecommendations.recommendationDate,
+                            users.userName, userRecommendations.theme
                             FROM userRecommendations
                             JOIN users ON userRecommendations.userId = users.userId
-                            AND userRecommendations.recommendedTo = ?";
+                            AND userRecommendations.recommendedTo = ? ";
     $recommendationStmt = $connect->prepare($recommendationQuery);
     $recommendationStmt->bindParam(1, $currentUserId);
     $currentUserId = $id;
@@ -38,7 +41,7 @@ $email = (!empty($_SESSION["userEmail"])) ? $_SESSION["userEmail"] : "";
         htmlentities($row["album"]),
         htmlentities($row["recommendationDate"]),
         htmlentities($row["userName"]),
-        '<h1>hurrah</h1>');
+        htmlentities($row["theme"]));
 
     }
 
