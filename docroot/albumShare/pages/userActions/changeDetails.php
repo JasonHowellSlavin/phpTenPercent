@@ -9,7 +9,7 @@ $email = (!empty($_SESSION["userEmail"])) ? $_SESSION["userEmail"] : "";
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" ) {
-    
+
 
     return true;
 
