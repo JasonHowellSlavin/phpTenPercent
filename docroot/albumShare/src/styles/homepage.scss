@@ -2,13 +2,12 @@
 
 article {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
     grid-gap: $standard-padding;
 
     section {
-        border: 4px solid black;
-        padding: $standard-padding * 2;
+        padding: $standard-padding;
     }
 
     h1 {
@@ -25,6 +24,53 @@ td {
     padding: $standard-padding $standard-padding / 2;
 }
 
-.user-panel {
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: $color-primary;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    align-items: stretch;
 
+    .logout {
+        display: grid;
+        grid-column: 3/4;
+
+        a {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            grid-template-columns: 1fr 1fr;
+            font-weight: 600;
+            text-decoration: none;
+
+            span {
+                padding: $standard-padding / 2;
+                font-weight: 600;
+            }
+        }
+
+        i {
+            justify-self: end;
+            align-self: center;
+            font-size: $standard-font-size * 1.5;
+        }
+    }
+
+    .user-panel {
+        grid-column: 4/5;
+    }
+
+}
+
+.recs-this-week {
+    background-color: $color-light;
+    grid-column: 1/4;
+    grid-row:  2/5;
+}
+
+.share-album {
+    background-color: $color-light;
+    grid-column: 4/5;
+    grid-row: 2/5;
 }

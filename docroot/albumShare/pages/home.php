@@ -17,15 +17,19 @@ $email = (!empty($_SESSION["userEmail"])) ? $_SESSION["userEmail"] : '';
 ?>
 <link rel="stylesheet" type="text/css" href="../dist/css/homepage.css">
 <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
 <article>
-    <section>
+<!--    TODO: Break this section out into an actualy header-->
+    <section class="header">
         <h1>AlbumShare</h1>
         <section class="user-panel">
-            <h3><a href="userActions/logout.php">Logout</a></h3>
+            <h3 class="logout"><a href="userActions/logout.php"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a></h3>
             <h3><a href="userActions/changePassword.php">Change Password</a></h3>
         </section>
     </section>
+
+
 
     <section class="recs-this-week">
         <h2>Welcome <?php echo $name ?></h2>
@@ -67,9 +71,9 @@ $email = (!empty($_SESSION["userEmail"])) ? $_SESSION["userEmail"] : '';
         </table>
         <h5><a href="allReccomendations.php">See all albums you've been recommended!</a></h5>
     </section>
-    <section class="add-friend">
-        <h3>Under Construction</h3>
-    </section>
+<!--    <section class="add-friend">-->
+<!--        <h3>Under Construction</h3>-->
+<!--    </section>-->
     <section class="share-album">
         <h3>Share an Album with Someone</h3>
         <form action="shareAlbum.php" method="POST">

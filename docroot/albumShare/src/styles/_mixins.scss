@@ -1,6 +1,15 @@
 @import 'variables';
 
-@mixin button ($text-color, $background-color, $border) {
+@mixin button ($text-color: $color-light-secondary, $background-color: $color-light, $border: 0) {
     padding: $standard-padding;
+    background-color: $background-color;
+    color:$text-color;
+    border: $border;
+
+    &:hover {
+        cursor: pointer;
+        color: darken($text-color, 20%);
+    }
+
 
 }
