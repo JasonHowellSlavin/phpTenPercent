@@ -15,7 +15,8 @@ $id = $_SESSION["userId"];
 $email = (!empty($_SESSION["userEmail"])) ? $_SESSION["userEmail"] : '';
 
 ?>
-<link rel="stylesheet" type="text/css" href="../src/styles/homepage.css">
+<link rel="stylesheet" type="text/css" href="../dist/css/homepage.css">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
 <article>
     <section>

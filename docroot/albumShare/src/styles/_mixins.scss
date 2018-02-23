@@ -1,0 +1,6 @@
+@import 'variables';
+
+@mixin button ($text-color, $background-color, $border) {
+    padding: $standard-padding;
+
+}

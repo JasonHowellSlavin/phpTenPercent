@@ -1,0 +1,30 @@
+@import 'typography';
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: $standard-padding;
+
+    section {
+        border: 4px solid black;
+        padding: $standard-padding * 2;
+    }
+
+    h1 {
+        font-size: $font-size-header;
+    }
+
+    h2 {
+        font-size: $font-size-subheader;
+    }
+}
+
+td {
+    border-left: 2px solid lightgray;
+    padding: $standard-padding $standard-padding / 2;
+}
+
+.user-panel {
+
+}
