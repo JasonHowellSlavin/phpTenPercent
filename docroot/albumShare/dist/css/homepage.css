@@ -66,29 +66,32 @@ td {
       -ms-grid-columns: 1fr 1fr;
           grid-template-columns: 1fr 1fr;
       font-weight: 600;
-      text-decoration: none; }
-      /* line 47, albumShare/src/styles/homepage.scss */
+      text-decoration: none;
+      color: black; }
+      /* line 48, albumShare/src/styles/homepage.scss */
       .header .logout a span {
+        color: black;
         padding: 10px;
         font-weight: 600; }
-    /* line 53, albumShare/src/styles/homepage.scss */
+    /* line 55, albumShare/src/styles/homepage.scss */
     .header .logout i {
+      color: black;
       justify-self: end;
       -ms-flex-item-align: center;
           -ms-grid-row-align: center;
           align-self: center;
       font-size: 24px; }
-  /* line 60, albumShare/src/styles/homepage.scss */
+  /* line 63, albumShare/src/styles/homepage.scss */
   .header .user-panel {
     grid-column: 4/5; }
 
-/* line 66, albumShare/src/styles/homepage.scss */
+/* line 69, albumShare/src/styles/homepage.scss */
 .recs-this-week {
   background-color: #2EE2FA;
   grid-column: 1/4;
   grid-row: 2/5; }
 
-/* line 72, albumShare/src/styles/homepage.scss */
+/* line 75, albumShare/src/styles/homepage.scss */
 .share-album {
   background-color: #2EE2FA;
   grid-column: 4/5;

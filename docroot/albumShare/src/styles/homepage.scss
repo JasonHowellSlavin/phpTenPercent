@@ -43,14 +43,17 @@ td {
             grid-template-columns: 1fr 1fr;
             font-weight: 600;
             text-decoration: none;
+            color: black;
 
             span {
+                color: black;
                 padding: $standard-padding / 2;
                 font-weight: 600;
             }
         }
 
         i {
+            color: black;
             justify-self: end;
             align-self: center;
             font-size: $standard-font-size * 1.5;
