@@ -18,6 +18,11 @@ $email = (!empty($_SESSION["userEmail"])) ? $_SESSION["userEmail"] : '';
 <link rel="stylesheet" type="text/css" href="../dist/css/homepage.css">
 <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="../dist/scripts/hello_world.js"></script>
 
 <article>
 <!--    TODO: Break this section out into an actualy header-->

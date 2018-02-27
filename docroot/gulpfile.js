@@ -28,10 +28,13 @@ gulp.task('sass', function() {
 
 gulp.task('js', function () {
     gulp.src(jsSrc)
-        .pipe(babel())
+        .pipe(babel({
+            presets: ['env']
+        }))
         .pipe(gulp.dest(jsDest))
 });
 
 gulp.task('watch', function () {
     gulp.watch(sassSrc, ['sass']);
+    gulp.watch(jsSrc, ['js']);
 });
