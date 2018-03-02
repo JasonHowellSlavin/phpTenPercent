@@ -69,7 +69,7 @@ span {
 /* line 4, albumShare/src/styles/homepage.scss */
 article {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: repeat(6, 1fr);
   grid-gap: 20px; }
   /* line 10, albumShare/src/styles/homepage.scss */
@@ -92,7 +92,7 @@ td {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: #31D8A7;
-  grid-column: 1/5;
+  grid-column: 1/6;
   grid-row: 1/2;
   -ms-flex-align: stretch;
       align-items: stretch; }
@@ -142,5 +142,5 @@ td {
 /* line 91, albumShare/src/styles/homepage.scss */
 .share-album {
   background-color: #2EE2FA;
-  grid-column: 4/5;
+  grid-column: 4/6;
   grid-row: 2/5; }

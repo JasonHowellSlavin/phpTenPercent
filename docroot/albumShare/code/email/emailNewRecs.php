@@ -31,7 +31,10 @@ $result = $mgClient->sendMessage($domain, array(
     'text'    => 'Testing some Mailgun awesomness!'
 ));
 
+?>
 
+<h1>Yo</h1>
+<?php
 //public function ($postUserEmail, $postRecArtist, $postRecAlbum, $numRecs) {
 //
 //    get
