@@ -34,7 +34,7 @@ try {
         'text'    => 'Testing some Mailgun awesomness!'
     ));
 } catch (Exception $e){
-  echo "Humphrey";
+  echo "Humphrey, $e";
 };
 
 
