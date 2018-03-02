@@ -22,7 +22,8 @@ $email = (!empty($_SESSION["userEmail"])) ? $_SESSION["userEmail"] : '';
         src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
-<script type="text/javascript" src="../dist/scripts/hello_world.js"></script>
+<!--<script type="text/javascript" src="../dist/scripts/hello_world.js"></script>-->
+<script type="text/javascript" src="../dist/scripts/homepage.js"></script>
 
 <article>
 <!--    TODO: Break this section out into an actualy header-->
@@ -121,6 +122,20 @@ $email = (!empty($_SESSION["userEmail"])) ? $_SESSION["userEmail"] : '';
             </select>
             <input type="submit" name="submit" value="Recommend Something!">
         </form>
-
+        <div class="share-track" data-current-user="<?php echo $id ?>">
+            <h3>See what you've recommended!</h3>
+            <select name="share-track">
+                <option value="default">------</option>
+                <?php
+                foreach( $connect->query("SELECT * FROM users;") as $row) {
+                    printf("<option value='%s'>%s</option>",
+                        htmlentities($row["userId"]),
+                        htmlentities($row["userName"]));
+                };
+                ?>
+            </select>
+            <input type="submit" name="shares"  value="go">
+            <div class="results"></div>
+        </div>
     </section>
 </article>

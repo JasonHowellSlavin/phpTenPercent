@@ -7,7 +7,7 @@ var babel = require('gulp-babel');
 var sassDest = 'albumShare/dist/css';
 var sassSrc = 'albumShare/src/styles/*.scss';
 var jsDest = 'albumShare/dist/scripts';
-var jsSrc = 'albumShare/src/scripts/*.js';
+var jsSrc = 'albumShare/src/scripts/**/*.js';
 
 gulp.task('log', function() {
     gutil.log('== My Log Task ==')
