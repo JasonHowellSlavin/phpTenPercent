@@ -24,12 +24,17 @@ $mgClient = new Mailgun('78901d2ba85f304101bd27611542885a');
 $domain = "absh-www.jhslavin.com";
 
 # Make the call to the client.
-$result = $mgClient->sendMessage($domain, array(
-    'from'    => 'Excited User <mailgun@absh-www.jhslavin.com>',
-    'to'      => 'Baz <slavin.jhs@gmail.com>',
-    'subject' => 'Hello',
-    'text'    => 'Testing some Mailgun awesomness!'
-));
+$try {
+    $result = $mgClient->sendMessage($domain, array(
+        'from'    => 'Excited User <mailgun@absh-www.jhslavin.com>',
+        'to'      => 'Baz <slavin.jhs@gmail.com>',
+        'subject' => 'Hello',
+        'text'    => 'Testing some Mailgun awesomness!'
+    ));
+} catch ($e) {
+  echo "Humphrey";
+};
+
 
 ?>
 
