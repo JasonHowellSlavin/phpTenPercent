@@ -1,0 +1,31 @@
+/* line 4, albumShare/src/styles/change-details-modal.scss */
+.change-details-modal {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 5; }
+  /* line 9, albumShare/src/styles/change-details-modal.scss */
+  .change-details-modal form {
+    display: grid;
+    grid-column: 1;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background: #EEEAD4;
+    padding: 20px; }
+  /* line 18, albumShare/src/styles/change-details-modal.scss */
+  .change-details-modal div {
+    grid-column: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding-bottom: 20px; }
+  /* line 25, albumShare/src/styles/change-details-modal.scss */
+  .change-details-modal label {
+    padding: 10px 0; }
+  /* line 29, albumShare/src/styles/change-details-modal.scss */
+  .change-details-modal input {
+    grid-column: 1; }
+  /* line 33, albumShare/src/styles/change-details-modal.scss */
+  .change-details-modal p {
+    font-size: 20px;
+    color: #FFF; }

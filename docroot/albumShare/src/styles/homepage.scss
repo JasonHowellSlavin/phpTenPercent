@@ -1,4 +1,5 @@
 @import 'typography';
+@import 'change-details-modal';
 
 article {
     display: grid;
@@ -32,9 +33,15 @@ td {
     grid-row: 1/2;
     align-items: stretch;
 
-    .logout {
+    .menu-item{
         display: grid;
         grid-column: 3/4;
+
+        &:hover {
+            span, i {
+                color: #EEEAD4;
+            }
+        }
 
         a {
             display: grid;
@@ -43,7 +50,6 @@ td {
             grid-template-columns: 1fr 1fr;
             font-weight: 600;
             text-decoration: none;
-            color: black;
 
             span {
                 color: black;
@@ -51,13 +57,23 @@ td {
                 font-weight: 600;
             }
         }
+    }
 
-        i {
-            color: black;
-            justify-self: end;
-            align-self: center;
-            font-size: $standard-font-size * 1.5;
+    .menu-item.change-details {
+        span, i {
+            color: grey;
+            cursor: initial;
         }
+    }
+
+
+
+
+    i {
+        color: black;
+        justify-self: end;
+        align-self: center;
+        font-size: $standard-font-size * 1.5;
     }
 
     .user-panel {

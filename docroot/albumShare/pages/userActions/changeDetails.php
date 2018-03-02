@@ -19,16 +19,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" ) {
 
 ?>
 
-<article>
-    <h2>Your Current Details</h2>
-    <h3>User Name: <?php echo $name ?></h3>
-    <h3>Email: <?php echo $email ?> </h3>
-
+<div class="change-details-modal" >
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-        <label for="current-password">New User Name</label>
-        <input type="password" name="user-name">
-        <label for="new-password">New E-mail</label>
-        <input type="password" name="new-email">
+        <div>
+            <p>Current User Name: <?php echo $name ?></p>
+            <label for="new-user-name">New User Name</label>
+            <input type="password" name="new-user-name">
+            <label for="confirm-new-user-name">Confirm New User Name</label>
+            <input type="password" name="confirm-new-user-name">
+        </div>
+        <div>
+            <p>Current Email: <?php echo $email ?></p>
+            <label for="new-email">New E-mail</label>
+            <input type="text" name="new-email">
+            <label for="confirm-new-email">Confirm New E-mail</label>
+            <input type="text" name="confirm-new-email">
+        </div>
         <input type="submit" value="Change Details">
     </form>
-</article>
+</div>

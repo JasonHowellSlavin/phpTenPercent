@@ -15,83 +15,131 @@ body {
   font-weight: 300;
   letter-spacing: 1px; }
 
-/* line 3, albumShare/src/styles/homepage.scss */
+/* line 20, albumShare/src/styles/_typography.scss */
+h1 {
+  font-size: 48px; }
+
+/* line 24, albumShare/src/styles/_typography.scss */
+h2 {
+  font-size: 32px; }
+
+/* line 28, albumShare/src/styles/_typography.scss */
+a {
+  color: #006062; }
+  /* line 31, albumShare/src/styles/_typography.scss */
+  a:hover {
+    color: #EEEAD4; }
+
+/* line 36, albumShare/src/styles/_typography.scss */
+span {
+  font-size: 12px; }
+
+/* line 4, albumShare/src/styles/change-details-modal.scss */
+.change-details-modal {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 5; }
+  /* line 9, albumShare/src/styles/change-details-modal.scss */
+  .change-details-modal form {
+    display: grid;
+    grid-column: 1;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background: #EEEAD4;
+    padding: 20px; }
+  /* line 18, albumShare/src/styles/change-details-modal.scss */
+  .change-details-modal div {
+    grid-column: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding-bottom: 20px; }
+  /* line 25, albumShare/src/styles/change-details-modal.scss */
+  .change-details-modal label {
+    padding: 10px 0; }
+  /* line 29, albumShare/src/styles/change-details-modal.scss */
+  .change-details-modal input {
+    grid-column: 1; }
+  /* line 33, albumShare/src/styles/change-details-modal.scss */
+  .change-details-modal p {
+    font-size: 20px;
+    color: #FFF; }
+
+/* line 4, albumShare/src/styles/homepage.scss */
 article {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: (1fr)[6];
-      grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
   grid-gap: 20px; }
-  /* line 9, albumShare/src/styles/homepage.scss */
+  /* line 10, albumShare/src/styles/homepage.scss */
   article section {
     padding: 20px; }
-  /* line 13, albumShare/src/styles/homepage.scss */
+  /* line 14, albumShare/src/styles/homepage.scss */
   article h1 {
     font-size: 48px; }
-  /* line 17, albumShare/src/styles/homepage.scss */
+  /* line 18, albumShare/src/styles/homepage.scss */
   article h2 {
     font-size: 32px; }
 
-/* line 22, albumShare/src/styles/homepage.scss */
+/* line 23, albumShare/src/styles/homepage.scss */
 td {
   border-left: 2px solid lightgray;
   padding: 20px 10px; }
 
-/* line 27, albumShare/src/styles/homepage.scss */
+/* line 28, albumShare/src/styles/homepage.scss */
 .header {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: #31D8A7;
   grid-column: 1/5;
   grid-row: 1/2;
   -ms-flex-align: stretch;
       align-items: stretch; }
-  /* line 35, albumShare/src/styles/homepage.scss */
-  .header .logout {
-    display: -ms-grid;
+  /* line 36, albumShare/src/styles/homepage.scss */
+  .header .menu-item {
     display: grid;
     grid-column: 3/4; }
-    /* line 39, albumShare/src/styles/homepage.scss */
-    .header .logout a {
-      display: -ms-grid;
+    /* line 41, albumShare/src/styles/homepage.scss */
+    .header .menu-item:hover span, .header .menu-item:hover i {
+      color: #EEEAD4; }
+    /* line 46, albumShare/src/styles/homepage.scss */
+    .header .menu-item a {
       display: grid;
       -ms-flex-pack: center;
           justify-content: center;
       -ms-flex-line-pack: center;
           align-content: center;
-      -ms-grid-columns: 1fr 1fr;
-          grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       font-weight: 600;
-      text-decoration: none;
-      color: black; }
-      /* line 48, albumShare/src/styles/homepage.scss */
-      .header .logout a span {
+      text-decoration: none; }
+      /* line 54, albumShare/src/styles/homepage.scss */
+      .header .menu-item a span {
         color: black;
         padding: 10px;
         font-weight: 600; }
-    /* line 55, albumShare/src/styles/homepage.scss */
-    .header .logout i {
-      color: black;
-      justify-self: end;
-      -ms-flex-item-align: center;
-          -ms-grid-row-align: center;
-          align-self: center;
-      font-size: 24px; }
   /* line 63, albumShare/src/styles/homepage.scss */
+  .header .menu-item.change-details span, .header .menu-item.change-details i {
+    color: grey;
+    cursor: initial; }
+  /* line 72, albumShare/src/styles/homepage.scss */
+  .header i {
+    color: black;
+    justify-self: end;
+    -ms-flex-item-align: center;
+        align-self: center;
+    font-size: 24px; }
+  /* line 79, albumShare/src/styles/homepage.scss */
   .header .user-panel {
     grid-column: 4/5; }
 
-/* line 69, albumShare/src/styles/homepage.scss */
+/* line 85, albumShare/src/styles/homepage.scss */
 .recs-this-week {
   background-color: #2EE2FA;
   grid-column: 1/4;
   grid-row: 2/5; }
 
-/* line 75, albumShare/src/styles/homepage.scss */
+/* line 91, albumShare/src/styles/homepage.scss */
 .share-album {
   background-color: #2EE2FA;
   grid-column: 4/5;

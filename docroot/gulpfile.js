@@ -22,7 +22,10 @@ gulp.task('sass', function() {
             }
             ))
         .on('error', gutil.log)
-        .pipe(autoprefixer('last 2 versions'))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            grid: false,
+        }))
         .pipe(gulp.dest(sassDest))
 });
 

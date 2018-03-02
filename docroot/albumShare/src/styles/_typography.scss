@@ -16,3 +16,23 @@ body {
     font-weight: 300;
     letter-spacing: 1px;
 }
+
+h1 {
+    font-size: $font-size-header;
+}
+
+h2 {
+    font-size: $font-size-subheader;
+}
+
+a {
+    color: $color-primary-dark;
+
+    &:hover {
+        color: $color-light-secondary;
+    }
+}
+
+span {
+    font-size: $font-size-small;
+}

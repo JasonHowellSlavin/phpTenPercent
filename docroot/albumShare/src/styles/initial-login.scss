@@ -1,0 +1,46 @@
+@import '_typography.scss';
+@import '_mixins.scss';
+@import '_variables.scss';
+
+article {
+    width: 100%;
+    height: 100%;
+    background: #E9E9E9;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+
+    section {
+        background: $color-primary;
+        border: 6px solid $color-primary-dark;
+        box-shadow: 10px 10px 8px 3px #D3D3D3;
+        grid-column: 2;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+            margin: $standard-padding 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            > * {
+                margin: $standard-padding / 2;
+            }
+
+            label {
+                font-size: $standard-font-size * 1.25;
+                align-self: flex-start;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

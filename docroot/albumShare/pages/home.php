@@ -27,10 +27,30 @@ $email = (!empty($_SESSION["userEmail"])) ? $_SESSION["userEmail"] : '';
 <article>
 <!--    TODO: Break this section out into an actualy header-->
     <section class="header">
-        <h1>AlbumShare</h1>
+        <h1>albumShare</h1>
         <section class="user-panel">
-            <h3 class="logout"><a href="userActions/logout.php"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a></h3>
-            <h3><a href="userActions/changePassword.php">Change Password</a></h3>
+            <h3 class="menu-item"><a href="userActions/logout.php"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a></h3>
+            <h3 class="menu-item"><a href="userActions/changePassword.php"><i class="fas fa-user-secret"></i><span>Change Password</span></a></h3>
+            <h3 class="menu-item change-details"><a href=""><i class="fas fa-address-card"></i><span>Change Details</span></a></h3>
+            <div class="change-details-modal">
+                <form>
+                    <div>
+                        <p>Current User Name: <?php echo $name ?></p>
+                        <label for="new-user-name">New User Name</label>
+                        <input type="password" name="new-user-name">
+                        <label for="confirm-new-user-name">Confirm New User Name</label>
+                        <input type="password" name="confirm-new-user-name">
+                    </div>
+                    <div>
+                        <p>Current Email: <?php echo $email ?></p>
+                        <label for="new-email">New E-mail</label>
+                        <input type="text" name="new-email">
+                        <label for="confirm-new-email">Confirm New E-mail</label>
+                        <input type="text" name="confirm-new-email">
+                    </div>
+                    <input type="submit" value="Change Details">
+                </form>
+            </div>
         </section>
     </section>
 
