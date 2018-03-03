@@ -11,7 +11,6 @@ session_start();
 
 require '../../../vendor/autoload.php';
 use Mailgun\Mailgun;
-$mailgun = new Mailgun('api_key', new \Http\Adapter\Guzzle6\Client());
 
 $name = (!empty($_SESSION["userName"])) ? $_SESSION["userName"] : "";
 $id = (!empty($_SESSION["userId"])) ? $_SESSION["userId"] : "";
@@ -36,7 +35,6 @@ try {
 } catch (Exception $e){
   echo "Humphrey, $e";
 };
-
 
 ?>
 
