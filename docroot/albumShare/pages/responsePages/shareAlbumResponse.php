@@ -26,11 +26,6 @@ $friendData = $getFriendID->fetchAll(PDO::FETCH_ASSOC);
 $friendName = $friendData[0]['userName'];
 $friendEmail = $friendData[0]['userEmail'];
 
-print_r($friendData);
-
-echo '<h1> Friend name ' . $friendName . $friendEmail . '</h1>';
-
-
 $message = "
    <html>
     <head>
