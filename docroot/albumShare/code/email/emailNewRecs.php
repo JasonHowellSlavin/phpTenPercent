@@ -60,15 +60,29 @@ $message = "
             </tbody>
     </body>";
 
+$serverName = trim($_SERVER['SERVER_NAME']);
 
+if (strpos($serverName, 'localhost') === false) {
 # Make the call to the client.
-try {
-    $result = $mgClient->sendMessage($domain, array(
-        'from'    => 'Excited User <mailgun@absh-www.jhslavin.com>',
-        'to'      => 'Baz <slavin.jhs@gmail.com>',
-        'subject' => 'Hello',
-        'html'    => $message,
-    ));
-} catch (Exception $e){
-  echo "Humphrey, $e";
-};
+    try {
+        $result = $mgClient->sendMessage($domain, array(
+            'from' => 'Grampa Farts <mailgun@absh-www.jhslavin.com>',
+            'to' => 'Baz <slavin.jhs@gmail.com>',
+            'subject' => 'Hello',
+            'html' => $message,
+        ));
+    } catch (Exception $e) {
+        echo "Humphrey, $e";
+    };
+} else {
+    try {
+        $result = $mgClient->sendMessage($domain, array(
+            'from' => 'Grampa Farts <mailgun@absh-www.jhslavin.com>',
+            'to' => 'Baz <slavin.jhs@gmail.com>',
+            'subject' => 'Hello',
+            'html' => $message,
+        ));
+    } catch (Exception $e) {
+        echo "Humphrey, $e";
+    };
+}

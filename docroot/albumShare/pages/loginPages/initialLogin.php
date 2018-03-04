@@ -75,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" ) {
 
 };
 ?>
-<link rel="stylesheet" type="text/css" href="../../dist/css/initial-login.css">
+<link rel="stylesheet" type="text/css" href="../../dist/css/form-pages.css">
 <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
 <article>

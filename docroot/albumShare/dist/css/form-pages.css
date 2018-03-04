@@ -1,0 +1,133 @@
+/* line 3, albumShare/src/styles/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+div,
+section,
+article,
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px; }
+
+/* line 20, albumShare/src/styles/_typography.scss */
+h1 {
+  font-size: 48px; }
+
+/* line 24, albumShare/src/styles/_typography.scss */
+h2 {
+  font-size: 32px; }
+
+/* line 28, albumShare/src/styles/_typography.scss */
+a {
+  color: #006062; }
+  /* line 31, albumShare/src/styles/_typography.scss */
+  a:hover {
+    color: #EEEAD4; }
+
+/* line 36, albumShare/src/styles/_typography.scss */
+span {
+  font-size: 12px; }
+
+/* line 1, albumShare/src/styles/table-format.scss */
+table {
+  padding: 2px; }
+
+/* line 6, albumShare/src/styles/form-pages.scss */
+article {
+  width: 100%;
+  height: 100%;
+  background: #E9E9E9;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr; }
+  /* line 14, albumShare/src/styles/form-pages.scss */
+  article section {
+    background: #31D8A7;
+    border: 6px solid #006062;
+    box-shadow: 10px 10px 8px 3px #D3D3D3;
+    grid-column: 2;
+    grid-row: 2;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    /* line 25, albumShare/src/styles/form-pages.scss */
+    article section h1 {
+      text-align: center;
+      margin: 20px 0; }
+    /* line 30, albumShare/src/styles/form-pages.scss */
+    article section form {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      /* line 36, albumShare/src/styles/form-pages.scss */
+      article section form > * {
+        margin: 10px; }
+      /* line 40, albumShare/src/styles/form-pages.scss */
+      article section form label {
+        font-size: 20px;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+        margin-bottom: 0; }
+  /* line 48, albumShare/src/styles/form-pages.scss */
+  article .recommendations-form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 100px;
+    margin-bottom: 0; }
+    /* line 55, albumShare/src/styles/form-pages.scss */
+    article .recommendations-form .artist-album {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      grid-row: 1;
+      grid-column: 1/5; }
+      /* line 63, albumShare/src/styles/form-pages.scss */
+      article .recommendations-form .artist-album div {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        padding: 20px 20px 0;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    /* line 72, albumShare/src/styles/form-pages.scss */
+    article .recommendations-form .add-theme {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-item-align: start;
+          align-self: start;
+      grid-row: 2;
+      grid-column: 2/4; }
+      /* line 81, albumShare/src/styles/form-pages.scss */
+      article .recommendations-form .add-theme label {
+        -ms-flex-item-align: center;
+            align-self: center; }

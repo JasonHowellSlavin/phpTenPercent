@@ -21,10 +21,23 @@ $(document).ready(function () {
 
     function placeData(element, data) {
         console.log(element);
-        var ourElement = $('<h3></h3>', {
+        $('<h3></h3>', {
             text: 'Artist: ' + data.artist + '; Album: ' + data.album
         }).appendTo(element);
     }
+
+    // function placeData (element, data) {
+    //     $('<div></div>', {
+    //         class: 'result-container',
+    //     }).appendTo(element);
+    //     $('<h3></h3>', {
+    //         text: 'Artist: ' + data.artist,
+    //     }).appendTo('.result-container');
+    //     $('<h3></h3>', {
+    //         text: 'Album: ' + data.album,
+    //     }).appendTo('.result-container');
+    // }
+
 
     function getRecommendedList() {
         $.ajax({
@@ -46,6 +59,7 @@ $(document).ready(function () {
 
     $('input[name="shares"]').on('click', function () {
         console.log('change');
+        $('.results').empty();
         getRecommendedList();
     });
 });

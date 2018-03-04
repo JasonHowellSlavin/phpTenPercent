@@ -20,10 +20,22 @@ $(document).ready(() => {
 
     function placeData (element, data) {
         console.log(element);
-        let ourElement = $('<h3></h3>', {
+        $('<h3></h3>', {
             text: 'Artist: ' + data.artist + '; Album: ' + data.album,
         }).appendTo(element);
     }
+
+    // function placeData (element, data) {
+    //     $('<div></div>', {
+    //         class: 'result-container',
+    //     }).appendTo(element);
+    //     $('<h3></h3>', {
+    //         text: 'Artist: ' + data.artist,
+    //     }).appendTo('.result-container');
+    //     $('<h3></h3>', {
+    //         text: 'Album: ' + data.album,
+    //     }).appendTo('.result-container');
+    // }
 
 
     function getRecommendedList () {
@@ -47,6 +59,7 @@ $(document).ready(() => {
 
     $('input[name="shares"]').on('click', () => {
         console.log('change');
+        $('.results').empty();
         getRecommendedList();
 
     });

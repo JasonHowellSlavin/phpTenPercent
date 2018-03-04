@@ -93,3 +93,8 @@ td {
     grid-column: 4/6;
     grid-row: 2/5;
 }
+
+.result-container {
+    display: flex;
+    flex-direction: row;
+}

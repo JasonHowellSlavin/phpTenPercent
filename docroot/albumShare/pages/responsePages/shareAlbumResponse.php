@@ -46,17 +46,33 @@ $message = "
             </tbody>
     </body>
 ";
-
-try {
-    $result = $mgClient->sendMessage($domain, array(
-        'from'    => 'albumShare <rockNRolla@absh-www.jhslavin.com>',
-        'to'      => $friendEmail,
-        'subject' => 'You Have Some New Album Recommendations from ' . $name .  '!',
-        'html'    => $message,
-    ));
-} catch (Exception $e){
-    echo "Humphrey, $e";
-};
+// Get the server name
+$serverName = trim($_SERVER['SERVER_NAME']);
+// If we are not on local, send the real deal
+if (strpos($serverName, 'localhost') === false) {
+    try {
+        $result = $mgClient->sendMessage($domain, array(
+            'from' => 'albumShare <rockNRolla@absh-www.jhslavin.com>',
+            'to' => $friendEmail,
+            'subject' => 'You Have Some New Album Recommendations from ' . $name . '!',
+            'html' => $message,
+        ));
+    } catch (Exception $e) {
+        echo "Humphrey, $e";
+    };
+} else {
+    // We are local, send all tests to me.
+    try {
+        $result = $mgClient->sendMessage($domain, array(
+            'from' => 'albumShare <rockNRolla@absh-www.jhslavin.com>',
+            'to' => 'slavin.jhs@gmail.com',
+            'subject' => 'You Have Some New Album Recommendations from ' . $name . '!',
+            'html' => $message,
+        ));
+    } catch (Exception $e) {
+        echo "Humphrey, $e";
+    };
+}
 
 
 

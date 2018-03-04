@@ -144,3 +144,10 @@ td {
   background-color: #2EE2FA;
   grid-column: 4/6;
   grid-row: 2/5; }
+
+/* line 97, albumShare/src/styles/homepage.scss */
+.result-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
