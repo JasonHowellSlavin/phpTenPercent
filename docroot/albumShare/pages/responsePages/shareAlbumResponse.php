@@ -26,8 +26,6 @@ $friendData = $getFriendID->fetchAll(PDO::FETCH_ASSOC);
 $friendName = $friendData[0]['userName'];
 $friendEmail = $friendData[0]['userEmail'];
 
-echo 'FriendName: ' . $friendName . '<br>FriendEmail:  ' . $friendEmail;
-
 $message = "
    <html>
     <head>
@@ -52,7 +50,6 @@ $message = "
 $serverName = trim($_SERVER['SERVER_NAME']);
 // If we are not on local, send the real deal
 if (strpos($serverName, 'localhost') === false) {
-    echo "<br>not local <br> $friendEmail <br> $name";
     try {
         $result = $mgClient->sendMessage($domain, array(
             'from' => 'albumShare <rockNRolla@absh-www.jhslavin.com>',
@@ -61,7 +58,7 @@ if (strpos($serverName, 'localhost') === false) {
             'html' => $message,
         ));
     } catch (Exception $e) {
-        echo "Humphrey, $e";
+        echo "Email Failed, $e";
     };
 } else {
     // We are local, send all tests to me.
@@ -74,7 +71,7 @@ if (strpos($serverName, 'localhost') === false) {
             'html' => $message,
         ));
     } catch (Exception $e) {
-        echo "Humphrey, $e";
+        echo "Email Failed, $e";
     };
 }
 
@@ -106,4 +103,4 @@ for ($i = 0; $i < $number; $i++) {
     }
 }
 
-//include "basicResponse.php";
+include "basicResponse.php";
