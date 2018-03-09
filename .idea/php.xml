@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/docroot/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/docroot/vendor/php-http/message-factory" />
+      <path value="$PROJECT_DIR$/docroot/vendor/composer" />
+      <path value="$PROJECT_DIR$/docroot/vendor/php-http/httplug" />
+      <path value="$PROJECT_DIR$/docroot/vendor/php-http/multipart-stream-builder" />
+      <path value="$PROJECT_DIR$/docroot/vendor/php-http/promise" />
+      <path value="$PROJECT_DIR$/docroot/vendor/php-http/message" />
+      <path value="$PROJECT_DIR$/docroot/vendor/php-http/guzzle6-adapter" />
+      <path value="$PROJECT_DIR$/docroot/vendor/php-http/client-common" />
+      <path value="$PROJECT_DIR$/docroot/vendor/php-http/discovery" />
+      <path value="$PROJECT_DIR$/docroot/vendor/clue/stream-filter" />
+      <path value="$PROJECT_DIR$/docroot/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/docroot/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/docroot/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/docroot/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/docroot/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/docroot/vendor/mailgun/mailgun-php" />
+    </include_path>
+  </component>
+</project>

@@ -145,9 +145,19 @@ td {
   grid-column: 4/6;
   grid-row: 2/5; }
 
-/* line 97, albumShare/src/styles/homepage.scss */
-.result-container {
+/* line 98, albumShare/src/styles/homepage.scss */
+.results div {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
-      flex-direction: row; }
+      flex-direction: row;
+  -ms-flex-pack: baseline;
+      justify-content: baseline;
+  -ms-flex-align: center;
+      align-items: center; }
+  /* line 104, albumShare/src/styles/homepage.scss */
+  .results div h3 {
+    padding: 0 20px; }
+    /* line 107, albumShare/src/styles/homepage.scss */
+    .results div h3:first-of-type {
+      width: 33%; }

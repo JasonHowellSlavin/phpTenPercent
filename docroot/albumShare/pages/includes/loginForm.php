@@ -1,5 +1,8 @@
 <?php
 ?>
+<link rel="stylesheet" type="text/css" href="../../dist/css/homepage.css">
+
+
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
     <label for="email">Email</label>
     <input type="text" name="email">

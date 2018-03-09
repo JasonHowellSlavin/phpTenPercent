@@ -94,7 +94,19 @@ td {
     grid-row: 2/5;
 }
 
-.result-container {
-    display: flex;
-    flex-direction: row;
+.results {
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: baseline;
+        align-items: center;
+
+        h3 {
+            padding: 0 $standard-padding;
+
+            &:first-of-type {
+                width: 33%;
+            }
+        }
+    }
 }

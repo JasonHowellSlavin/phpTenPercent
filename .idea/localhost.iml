@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/docroot/vendor/clue/stream-filter" />
+      <excludeFolder url="file://$MODULE_DIR$/docroot/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/docroot/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/docroot/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/docroot/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/docroot/vendor/mailgun/mailgun-php" />
+      <excludeFolder url="file://$MODULE_DIR$/docroot/vendor/php-http/client-common" />
+      <excludeFolder url="file://$MODULE_DIR$/docroot/vendor/php-http/discovery" />
+      <excludeFolder url="file://$MODULE_DIR$/docroot/vendor/php-http/guzzle6-adapter" />
+      <excludeFolder url="file://$MODULE_DIR$/docroot/vendor/php-http/httplug" />
+      <excludeFolder url="file://$MODULE_DIR$/docroot/vendor/php-http/message" />
+      <excludeFolder url="file://$MODULE_DIR$/docroot/vendor/php-http/message-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/docroot/vendor/php-http/multipart-stream-builder" />
+      <excludeFolder url="file://$MODULE_DIR$/docroot/vendor/php-http/promise" />
+      <excludeFolder url="file://$MODULE_DIR$/docroot/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/docroot/vendor/symfony/options-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/docroot/vendor/webmozart/assert" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

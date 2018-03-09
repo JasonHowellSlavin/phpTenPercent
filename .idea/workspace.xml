@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9de31fdd-6bcd-40cc-a195-6c0195006116" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/docroot/albumShare/code/email/emailNewRecs.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docroot/albumShare/pages/userActions/changeDetails.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/docroot/albumShare/code/includes/redirectToHome.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/docroot/albumShare/pages/loginPages/passwordRecovery.php" />
       <change beforePath="$PROJECT_DIR$/.idea/localhost.iml" afterPath="$PROJECT_DIR$/.idea/localhost.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/docroot/albumShare/pages/allReccomendations.php" afterPath="$PROJECT_DIR$/docroot/albumShare/pages/allReccomendations.php" />
-      <change beforePath="$PROJECT_DIR$/docroot/albumShare/pages/home.php" afterPath="$PROJECT_DIR$/docroot/albumShare/pages/home.php" />
-      <change beforePath="$PROJECT_DIR$/docroot/albumShare/pages/responsePages/basicResponse.php" afterPath="$PROJECT_DIR$/docroot/albumShare/pages/responsePages/basicResponse.php" />
+      <change beforePath="$PROJECT_DIR$/docroot/albumShare/dist/css/homepage.css" afterPath="$PROJECT_DIR$/docroot/albumShare/dist/css/homepage.css" />
+      <change beforePath="$PROJECT_DIR$/docroot/albumShare/dist/scripts/homepage.js" afterPath="$PROJECT_DIR$/docroot/albumShare/dist/scripts/homepage.js" />
+      <change beforePath="$PROJECT_DIR$/docroot/albumShare/pages/includes/loginForm.php" afterPath="$PROJECT_DIR$/docroot/albumShare/pages/includes/loginForm.php" />
+      <change beforePath="$PROJECT_DIR$/docroot/albumShare/pages/responsePages/shareAlbumResponse.php" afterPath="$PROJECT_DIR$/docroot/albumShare/pages/responsePages/shareAlbumResponse.php" />
+      <change beforePath="$PROJECT_DIR$/docroot/albumShare/src/scripts/homepage.js" afterPath="$PROJECT_DIR$/docroot/albumShare/src/scripts/homepage.js" />
+      <change beforePath="$PROJECT_DIR$/docroot/albumShare/src/styles/homepage.scss" afterPath="$PROJECT_DIR$/docroot/albumShare/src/styles/homepage.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,6 +20,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/docroot/composer.json</pharConfigPath>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -31,55 +38,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="emailNewRecs.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docroot/albumShare/code/email/emailNewRecs.php">
+      <file leaf-file-name="homepage.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docroot/albumShare/src/styles/homepage.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="26" />
+            <state relative-caret-position="1605">
+              <caret line="107" column="27" lean-forward="false" selection-start-line="107" selection-start-column="27" selection-end-line="107" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loginForm.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/includes/loginForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="18" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="passwordRecovery.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/loginPages/passwordRecovery.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shareAlbumResponse.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/responsePages/shareAlbumResponse.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="64" column="6" lean-forward="true" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
               <folding>
-                <marker date="1518054233000" expanded="true" signature="490:1616" ph="..." />
-                <marker date="1518054233000" expanded="true" signature="490:1617" ph="..." />
-                <marker date="1518054233000" expanded="true" signature="501:572" ph="..." />
-                <marker date="1518054233000" expanded="true" signature="583:1616" ph="..." />
-                <marker date="1518054233000" expanded="true" signature="607:627" ph="..." />
-                <marker date="1518054233000" expanded="true" signature="628:1609" ph="..." />
-                <marker date="1518054233000" expanded="true" signature="649:1604" ph="..." />
-                <marker date="1518054233000" expanded="true" signature="670:751" ph="..." />
-                <marker date="1518054233000" expanded="true" signature="694:729" ph="..." />
-                <marker date="1518054233000" expanded="true" signature="772:894" ph="..." />
-                <marker date="1518054233000" expanded="true" signature="797:872" ph="..." />
-                <marker date="1518054233000" expanded="true" signature="915:1583" ph="..." />
-                <marker date="1518054233000" expanded="true" signature="941:1561" ph="..." />
-                <marker date="1518054233000" expanded="true" signature="1009:1535" ph="..." />
-                <marker date="1518054233000" expanded="true" signature="1042:1299" ph="..." />
-                <marker date="1518054233000" expanded="true" signature="1078:1154" ph="..." />
-                <marker date="1518054233000" expanded="true" signature="1190:1265" ph="..." />
+                <marker date="1520632441000" expanded="true" signature="571:607" ph="SELECT * FRO... users" />
+                <marker date="1520632441000" expanded="true" signature="960:1584" ph="..." />
+                <marker date="1520632441000" expanded="true" signature="971:1020" ph="..." />
+                <marker date="1520632441000" expanded="true" signature="971:1021" ph="..." />
+                <marker date="1520632441000" expanded="true" signature="971:1022" ph="..." />
+                <marker date="1520632441000" expanded="true" signature="971:1054" ph="..." />
+                <marker date="1520632441000" expanded="true" signature="1065:1087" ph="..." />
+                <marker date="1520632441000" expanded="true" signature="1065:1583" ph="..." />
+                <marker date="1520632441000" expanded="true" signature="1089:1109" ph="..." />
+                <marker date="1520632441000" expanded="true" signature="1110:1576" ph="..." />
+                <marker date="1520632441000" expanded="true" signature="1130:1571" ph="..." />
+                <marker date="1520632441000" expanded="true" signature="1151:1246" ph="..." />
+                <marker date="1520632441000" expanded="true" signature="1175:1224" ph="..." />
+                <marker date="1520632441000" expanded="true" signature="1267:1298" ph="..." />
+                <marker date="1520632441000" expanded="true" signature="1267:1550" ph="..." />
+                <marker date="1520632441000" expanded="true" signature="1300:1317" ph="..." />
+                <marker date="1520632441000" expanded="true" signature="1318:1528" ph="..." />
+                <marker date="1520632441000" expanded="true" signature="2670:2733" ph="INSERT INTO userRecommendations... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="changeDetails.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/userActions/changeDetails.php">
+      <file leaf-file-name="redirectToHome.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docroot/albumShare/code/includes/redirectToHome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-              <folding>
-                <marker date="1518057503000" expanded="true" signature="387:526" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="changePassword.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/userActions/changePassword.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="13" column="44" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="44" />
-              <folding>
-                <marker date="1517532013000" expanded="true" signature="953:1008" ph="SELECT userP... userPasswords" />
-                <marker date="1517532013000" expanded="true" signature="1522:1580" ph="UPDATE userPasswords... " />
-              </folding>
+            <state relative-caret-position="195">
+              <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,12 +110,58 @@
       <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+            <state relative-caret-position="255">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="71" />
               <folding>
-                <marker date="1518052362000" expanded="true" signature="1212:1709" ph="SELECT userR... userRecommendations" />
-                <marker date="1518052362000" expanded="true" signature="2930:2949" ph="SELECT * FRO... users" />
+                <marker date="1520030900000" expanded="true" signature="3062:3559" ph="SELECT userR... userRecommendations" />
+                <marker date="1520030900000" expanded="true" signature="4801:4820" ph="SELECT * FRO... users" />
+                <marker date="1520030900000" expanded="true" signature="5687:5706" ph="SELECT * FRO... users" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createAccount.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/loginPages/createAccount.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="44" />
+              <folding>
+                <marker date="1517532013000" expanded="true" signature="609:653" ph="SELECT userI... users" />
+                <marker date="1517532013000" expanded="true" signature="2323:2360" ph="INSERT INTO users... " />
+                <marker date="1517532013000" expanded="true" signature="2394:2445" ph="INSERT INTO userPasswords... " />
+                <marker date="1517532013000" expanded="true" signature="2952:3021" ph="SELECT * FRO... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form-pages.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docroot/albumShare/src/styles/form-pages.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homepage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docroot/albumShare/src/scripts/homepage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="44" column="24" lean-forward="false" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="basicResponse.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/responsePages/basicResponse.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="21" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,6 +172,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -112,6 +182,7 @@
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/docroot</dir>
+      <dir>$PROJECT_DIR$/docroot/albumShare/src/scripts</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -120,29 +191,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/docroot/testSQLConnection.php" />
-        <option value="$PROJECT_DIR$/docroot/musicShare.php" />
-        <option value="$PROJECT_DIR$/docroot/words.php" />
-        <option value="$PROJECT_DIR$/docroot/counter.php" />
-        <option value="$PROJECT_DIR$/docroot/hidden-counter.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/cookie-counter.php" />
-        <option value="$PROJECT_DIR$/docroot/cookie.php" />
-        <option value="$PROJECT_DIR$/docroot/header.php" />
-        <option value="$PROJECT_DIR$/docroot/pages/header.php" />
-        <option value="$PROJECT_DIR$/docroot/ApiClass.php" />
-        <option value="$PROJECT_DIR$/docroot/myAPI.php" />
-        <option value="$PROJECT_DIR$/docroot/api.php" />
         <option value="$PROJECT_DIR$/docroot/pages/wordsHome.php" />
         <option value="$PROJECT_DIR$/vendor/webonyx/graphql-php/examples/01-blog/graphql.php" />
         <option value="$PROJECT_DIR$/docroot/endpoints/graphql.php" />
         <option value="$PROJECT_DIR$/docroot/graphql.php" />
         <option value="$PROJECT_DIR$/docroot/pages/tester.php" />
-        <option value="$PROJECT_DIR$/docroot/albumShare/src/styles/homepage.css" />
         <option value="$PROJECT_DIR$/docroot/albumShare/pages/includes/addRecForm.php" />
         <option value="$PROJECT_DIR$/docroot/albumShare/pages/addFriends.php" />
         <option value="$PROJECT_DIR$/docroot/albumShare/pages/responsePages/basicReponse.php" />
-        <option value="$PROJECT_DIR$/docroot/albumShare/pages/includes/shareAlbumForm.php" />
         <option value="$PROJECT_DIR$/docroot/wordTest/words.php" />
         <option value="$PROJECT_DIR$/docroot/wordTest/wordsHome.php" />
         <option value="$PROJECT_DIR$/docroot/albumShare/code/pdoController.php" />
@@ -150,33 +206,85 @@
         <option value="$PROJECT_DIR$/docroot/albumShare/pages/loginPages/createAccount.php" />
         <option value="$PROJECT_DIR$/docroot/albumShare/pages/loginPages/logout.php" />
         <option value="$PROJECT_DIR$/docroot/albumShare/pages/userActions/logout.php" />
-        <option value="$PROJECT_DIR$/docroot/albumShare/pages/includes/loginForm.php" />
         <option value="$PROJECT_DIR$/docroot/albumShare/pages/userActions/changePassword.php" />
-        <option value="$PROJECT_DIR$/docroot/albumShare/pages/loginPages/initialLogin.php" />
         <option value="$PROJECT_DIR$/docroot/index.php" />
         <option value="$PROJECT_DIR$/docroot/.htaccess" />
         <option value="$PROJECT_DIR$/docroot/albumShare/code/pdo.php" />
+        <option value="$PROJECT_DIR$/docroot/vendor/autoload.php" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/src/styles/homepage.css" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/dist/css/homepage.css" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/src/styles/typography.scss" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/src/styles/_variables.scss" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/src/styles/_mixins.scss" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/dist/scripts/hello_world.js" />
+        <option value="$PROJECT_DIR$/docroot/package.json" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/src/scripts/hello_world.js" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/pages/endpoints/helloWorldAPI.php" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/pages/userActions/changeDetails.php" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/src/styles/initial-login.scss" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/src/styles/change-details-modal.scss" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/src/styles/_typography.scss" />
+        <option value="$PROJECT_DIR$/docroot/gulpfile.js" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/src/scripts/ajax/homepage.js" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/pages/endpoints/homePage.php" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/pages/home.php" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/pages/loginPages/initialLogin.php" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/pages/includes/shareAlbumForm.php" />
         <option value="$PROJECT_DIR$/docroot/albumShare/pages/shareAlbum.php" />
-        <option value="$PROJECT_DIR$/docroot/albumShare/pages/responsePages/shareAlbumResponse.php" />
         <option value="$PROJECT_DIR$/docroot/albumShare/pages/responsePages/basicResponse.php" />
         <option value="$PROJECT_DIR$/docroot/albumShare/pages/allReccomendations.php" />
-        <option value="$PROJECT_DIR$/docroot/albumShare/pages/home.php" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/src/styles/table-format.scss" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/src/styles/form-pages.scss" />
         <option value="$PROJECT_DIR$/docroot/albumShare/code/email/emailNewRecs.php" />
-        <option value="$PROJECT_DIR$/docroot/albumShare/pages/userActions/changeDetails.php" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/src/scripts/homepage.js" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/src/styles/homepage.scss" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/pages/includes/loginForm.php" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/code/includes/redirectToHome.php" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/pages/loginPages/passwordRecovery.php" />
+        <option value="$PROJECT_DIR$/docroot/albumShare/pages/responsePages/shareAlbumResponse.php" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/docroot/node_modules" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+    <include_path>
+      <path value="$PROJECT_DIR$/docroot/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/docroot/vendor/php-http/message-factory" />
+      <path value="$PROJECT_DIR$/docroot/vendor/composer" />
+      <path value="$PROJECT_DIR$/docroot/vendor/php-http/httplug" />
+      <path value="$PROJECT_DIR$/docroot/vendor/php-http/multipart-stream-builder" />
+      <path value="$PROJECT_DIR$/docroot/vendor/php-http/promise" />
+      <path value="$PROJECT_DIR$/docroot/vendor/php-http/message" />
+      <path value="$PROJECT_DIR$/docroot/vendor/php-http/guzzle6-adapter" />
+      <path value="$PROJECT_DIR$/docroot/vendor/php-http/client-common" />
+      <path value="$PROJECT_DIR$/docroot/vendor/php-http/discovery" />
+      <path value="$PROJECT_DIR$/docroot/vendor/clue/stream-filter" />
+      <path value="$PROJECT_DIR$/docroot/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/docroot/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/docroot/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/docroot/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/docroot/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/docroot/vendor/mailgun/mailgun-php" />
+    </include_path>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1687" />
+    <option name="x" value="1680" />
     <option name="y" value="23" />
-    <option name="width" value="1485" />
+    <option name="width" value="1403" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -197,7 +305,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -236,12 +343,36 @@
               <item name="docroot" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="albumShare" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="userActions" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="loginPages" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="localhost" type="b2602c69:ProjectViewProjectNode" />
+              <item name="localhost" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="docroot" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="albumShare" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="responsePages" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="localhost" type="b2602c69:ProjectViewProjectNode" />
+              <item name="localhost" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="docroot" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="albumShare" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="localhost" type="b2602c69:ProjectViewProjectNode" />
+              <item name="localhost" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="docroot" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="albumShare" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="styles" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -249,7 +380,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -298,34 +430,35 @@
       <workItem from="1515607539929" duration="28835000" />
       <workItem from="1516210619066" duration="42448000" />
       <workItem from="1517623808623" duration="7654000" />
-      <workItem from="1517949302374" duration="5538000" />
+      <workItem from="1517949302374" duration="64918000" />
+      <workItem from="1520624830321" duration="2011000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125439000" />
+    <option name="totallyTimeSpent" value="186830000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1687" y="23" width="1485" height="1057" extended-state="0" />
+    <frame x="1680" y="23" width="1403" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20928621" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22483468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -367,152 +500,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/docroot/wordTest/testAndNotes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-          <folding>
-            <marker date="1517532013000" expanded="true" signature="634:680" ph="INSERT INTO words... " />
-            <marker date="1517532013000" expanded="true" signature="787:809" ph="SELECT * FRO... webWords" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/wordTest/testAndNotes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding>
-            <marker date="1517532013000" expanded="true" signature="634:680" ph="INSERT INTO words... " />
-            <marker date="1517532013000" expanded="true" signature="787:809" ph="SELECT * FRO... webWords" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="12" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/wordTest/words.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/wordTest/words.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/wordTest/testAndNotes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-          <folding>
-            <marker date="1517532013000" expanded="true" signature="634:680" ph="INSERT INTO words... " />
-            <marker date="1517532013000" expanded="true" signature="787:809" ph="SELECT * FRO... webWords" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/wordTest/words.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="53" lean-forward="false" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/wordTest/testAndNotes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-          <folding>
-            <marker date="1517532013000" expanded="true" signature="634:680" ph="INSERT INTO words... " />
-            <marker date="1517532013000" expanded="true" signature="787:809" ph="SELECT * FRO... webWords" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/wordTest/hidden-counter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/cookie-counter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/wordTest/musicShare.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/ApiClass.php" />
-    <entry file="file://$PROJECT_DIR$/docroot/api.php" />
-    <entry file="file://$PROJECT_DIR$/docroot/myAPI.php" />
-    <entry file="file://$PROJECT_DIR$/vendor/webonyx/graphql-php/examples/00-hello-world/graphql.php" />
-    <entry file="file://$PROJECT_DIR$/vendor/webonyx/graphql-php/examples/00-hello-world/README.md" />
-    <entry file="file://$PROJECT_DIR$/vendor/webonyx/graphql-php/src/Type/Schema.php" />
-    <entry file="file://$PROJECT_DIR$/vendor/webonyx/graphql-php/examples/01-blog/graphql.php" />
-    <entry file="file://$PROJECT_DIR$/docroot/wordTest/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/graphql.php" />
-    <entry file="file://$PROJECT_DIR$/docroot/wordTest/tester.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/shareAlbum.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docroot/wordTest/counter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -524,13 +511,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/src/styles/homepage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -569,33 +549,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/includes/loginForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docroot/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/code/pdo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/loginPages/createAccount.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="95" column="29" lean-forward="false" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -607,126 +564,314 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/code/email/emailNewRecs.ss">
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/code/email/emailNewRecs.ss" />
+    <entry file="file://$PROJECT_DIR$/docroot/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-668">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/src/styles/homepage.css" />
+    <entry file="file://$PROJECT_DIR$/docroot/composer.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/src/styles/_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/dist/scripts/hello_world.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="3" lean-forward="false" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/dist/css/change-details-modal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/dist/css/homepage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/userActions/changePassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="67" column="10" lean-forward="false" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/userActions/changeDetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="86" lean-forward="false" selection-start-line="22" selection-start-column="86" selection-end-line="22" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/src/styles/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/src/styles/change-details-modal.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/src/styles/_typography.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/dist/scripts/ajax/homepage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/src/scripts/ajax/homepage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="2" lean-forward="false" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/dist/scripts/homepage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/src/scripts/hello_world.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/endpoints/homePage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="31" column="2" lean-forward="false" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/endpoints/helloWorldAPI.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="35" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/code/pdo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="20" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/includes/shareAlbumForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="60">
+          <caret line="4" column="55" lean-forward="false" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/shareAlbum.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="44" lean-forward="false" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-          <folding>
-            <marker date="1517776661000" expanded="true" signature="181:253" ph="SELECT CONCA... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/loginPages/initialLogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="47" column="73" lean-forward="false" selection-start-line="47" selection-start-column="73" selection-end-line="47" selection-end-column="73" />
-          <folding>
-            <marker date="1517768163000" expanded="true" signature="658:697" ph="SELECT * FRO... users" />
-            <marker date="1517768163000" expanded="true" signature="1181:1225" ph="SELECT * FRO... userPasswords" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/responsePages/shareAlbumResponse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-          <folding>
-            <marker date="1517777630000" expanded="true" signature="458:521" ph="INSERT INTO userRecommendations... " />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/allReccomendations.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <marker date="1518052329000" expanded="true" signature="596:1002" ph="SELECT userR... userRecommendations" />
-            <marker date="1518052329000" expanded="true" signature="596:1003" ph="SELECT userR... userRecommendations" />
-          </folding>
+        <state relative-caret-position="600">
+          <caret line="45" column="51" lean-forward="false" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/responsePages/basicResponse.php">
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/loginPages/initialLogin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="254">
+          <caret line="46" column="43" lean-forward="false" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+          <folding>
+            <marker date="1520106067000" expanded="true" signature="658:697" ph="SELECT * FRO... users" />
+            <marker date="1520106067000" expanded="true" signature="1181:1225" ph="SELECT * FRO... userPasswords" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docroot/albumShare/code/email/emailNewRecs.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <marker date="1518054233000" expanded="true" signature="490:1616" ph="..." />
-            <marker date="1518054233000" expanded="true" signature="490:1617" ph="..." />
-            <marker date="1518054233000" expanded="true" signature="501:572" ph="..." />
-            <marker date="1518054233000" expanded="true" signature="583:1616" ph="..." />
-            <marker date="1518054233000" expanded="true" signature="607:627" ph="..." />
-            <marker date="1518054233000" expanded="true" signature="628:1609" ph="..." />
-            <marker date="1518054233000" expanded="true" signature="649:1604" ph="..." />
-            <marker date="1518054233000" expanded="true" signature="670:751" ph="..." />
-            <marker date="1518054233000" expanded="true" signature="694:729" ph="..." />
-            <marker date="1518054233000" expanded="true" signature="772:894" ph="..." />
-            <marker date="1518054233000" expanded="true" signature="797:872" ph="..." />
-            <marker date="1518054233000" expanded="true" signature="915:1583" ph="..." />
-            <marker date="1518054233000" expanded="true" signature="941:1561" ph="..." />
-            <marker date="1518054233000" expanded="true" signature="1009:1535" ph="..." />
-            <marker date="1518054233000" expanded="true" signature="1042:1299" ph="..." />
-            <marker date="1518054233000" expanded="true" signature="1078:1154" ph="..." />
-            <marker date="1518054233000" expanded="true" signature="1190:1265" ph="..." />
-          </folding>
+        <state relative-caret-position="450">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="64" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/src/styles/table-format.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/src/scripts/homepage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="24" lean-forward="false" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/src/styles/form-pages.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/src/styles/homepage.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1605">
+          <caret line="107" column="27" lean-forward="false" selection-start-line="107" selection-start-column="27" selection-end-line="107" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/includes/loginForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="18" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/responsePages/basicResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="21" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="71" />
           <folding>
-            <marker date="1518052362000" expanded="true" signature="1212:1709" ph="SELECT userR... userRecommendations" />
-            <marker date="1518052362000" expanded="true" signature="2930:2949" ph="SELECT * FRO... users" />
+            <marker date="1520030900000" expanded="true" signature="3062:3559" ph="SELECT userR... userRecommendations" />
+            <marker date="1520030900000" expanded="true" signature="4801:4820" ph="SELECT * FRO... users" />
+            <marker date="1520030900000" expanded="true" signature="5687:5706" ph="SELECT * FRO... users" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/userActions/changePassword.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="13" column="44" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="44" />
-          <folding>
-            <marker date="1517532013000" expanded="true" signature="953:1008" ph="SELECT userP... userPasswords" />
-            <marker date="1517532013000" expanded="true" signature="1522:1580" ph="UPDATE userPasswords... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/userActions/changeDetails.php">
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/loginPages/createAccount.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="44" />
           <folding>
-            <marker date="1518057503000" expanded="true" signature="387:526" ph="..." />
+            <marker date="1517532013000" expanded="true" signature="609:653" ph="SELECT userI... users" />
+            <marker date="1517532013000" expanded="true" signature="2323:2360" ph="INSERT INTO users... " />
+            <marker date="1517532013000" expanded="true" signature="2394:2445" ph="INSERT INTO userPasswords... " />
+            <marker date="1517532013000" expanded="true" signature="2952:3021" ph="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/code/includes/redirectToHome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/loginPages/passwordRecovery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docroot/albumShare/pages/responsePages/shareAlbumResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="64" column="6" lean-forward="true" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
+          <folding>
+            <marker date="1520632441000" expanded="true" signature="571:607" ph="SELECT * FRO... users" />
+            <marker date="1520632441000" expanded="true" signature="960:1584" ph="..." />
+            <marker date="1520632441000" expanded="true" signature="971:1020" ph="..." />
+            <marker date="1520632441000" expanded="true" signature="971:1021" ph="..." />
+            <marker date="1520632441000" expanded="true" signature="971:1022" ph="..." />
+            <marker date="1520632441000" expanded="true" signature="971:1054" ph="..." />
+            <marker date="1520632441000" expanded="true" signature="1065:1087" ph="..." />
+            <marker date="1520632441000" expanded="true" signature="1065:1583" ph="..." />
+            <marker date="1520632441000" expanded="true" signature="1089:1109" ph="..." />
+            <marker date="1520632441000" expanded="true" signature="1110:1576" ph="..." />
+            <marker date="1520632441000" expanded="true" signature="1130:1571" ph="..." />
+            <marker date="1520632441000" expanded="true" signature="1151:1246" ph="..." />
+            <marker date="1520632441000" expanded="true" signature="1175:1224" ph="..." />
+            <marker date="1520632441000" expanded="true" signature="1267:1298" ph="..." />
+            <marker date="1520632441000" expanded="true" signature="1267:1550" ph="..." />
+            <marker date="1520632441000" expanded="true" signature="1300:1317" ph="..." />
+            <marker date="1520632441000" expanded="true" signature="1318:1528" ph="..." />
+            <marker date="1520632441000" expanded="true" signature="2670:2733" ph="INSERT INTO userRecommendations... " />
           </folding>
         </state>
       </provider>

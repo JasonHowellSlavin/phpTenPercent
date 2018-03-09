@@ -18,24 +18,26 @@ $(document).ready(() => {
 
     }
 
-    function placeData (element, data) {
-        console.log(element);
-        $('<h3></h3>', {
-            text: 'Artist: ' + data.artist + '; Album: ' + data.album,
-        }).appendTo(element);
-    }
-
     // function placeData (element, data) {
-    //     $('<div></div>', {
-    //         class: 'result-container',
+    //     console.log(element);
+    //     $('<h3></h3>', {
+    //         text: 'Artist: ' + data.artist + '; Album: ' + data.album,
     //     }).appendTo(element);
-    //     $('<h3></h3>', {
-    //         text: 'Artist: ' + data.artist,
-    //     }).appendTo('.result-container');
-    //     $('<h3></h3>', {
-    //         text: 'Album: ' + data.album,
-    //     }).appendTo('.result-container');
     // }
+
+    function placeData (element, data) {
+        console.log('one');
+        let container = $('<div></div>', {
+        }).appendTo(element);
+
+        $('<h3></h3>', {
+            text: 'Artist: ' + data.artist,
+        }).appendTo(container);
+
+        $('<h3></h3>', {
+            text: 'Album: ' + data.album,
+        }).appendTo(container);
+    }
 
 
     function getRecommendedList () {
