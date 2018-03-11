@@ -1,0 +1,45 @@
+@import '_typography.scss';
+@import '_mixins.scss';
+@import '_variables.scss';
+@import 'form-pages';
+
+form {
+    min-height: 235px;
+}
+
+.lost-pw-form {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+
+    button {
+        @include button;
+    }
+
+}
+
+.lost-pw {
+    color: $color-primary-dark;
+    text-decoration: underline;
+
+    &:hover {
+        color: $color-light-secondary;
+    }
+}
+
+.toggle {
+    animation: pw-form-toggle 3s linear;
+}
+
+
+
+@keyframes pw-form-toggle {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}

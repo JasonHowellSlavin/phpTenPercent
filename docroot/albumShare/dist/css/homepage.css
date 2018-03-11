@@ -1,4 +1,4 @@
-/* line 3, albumShare/src/styles/_typography.scss */
+/* line 4, albumShare/src/styles/_typography.scss */
 h1,
 h2,
 h3,
@@ -15,24 +15,60 @@ body {
   font-weight: 300;
   letter-spacing: 1px; }
 
-/* line 20, albumShare/src/styles/_typography.scss */
+/* line 21, albumShare/src/styles/_typography.scss */
 h1 {
   font-size: 48px; }
 
-/* line 24, albumShare/src/styles/_typography.scss */
+/* line 25, albumShare/src/styles/_typography.scss */
 h2 {
   font-size: 32px; }
 
-/* line 28, albumShare/src/styles/_typography.scss */
+/* line 29, albumShare/src/styles/_typography.scss */
 a {
   color: #006062; }
-  /* line 31, albumShare/src/styles/_typography.scss */
+  /* line 32, albumShare/src/styles/_typography.scss */
   a:hover {
     color: #EEEAD4; }
 
-/* line 36, albumShare/src/styles/_typography.scss */
+/* line 37, albumShare/src/styles/_typography.scss */
 span {
   font-size: 12px; }
+
+/* line 41, albumShare/src/styles/_typography.scss */
+form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+/* line 48, albumShare/src/styles/_typography.scss */
+input {
+  margin: 10px; }
+
+/* line 52, albumShare/src/styles/_typography.scss */
+input[type="submit"] {
+  padding: 20px;
+  margin: 20px;
+  background-color: #2EE2FA;
+  color: #006062;
+  border: 0;
+  font-weight: bold;
+  font-size: 16px; }
+  /* line 12, albumShare/src/styles/_mixins.scss */
+  input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #05a8bd; }
+
+/* line 56, albumShare/src/styles/_typography.scss */
+label {
+  font-size: 20px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 0; }
 
 /* line 4, albumShare/src/styles/change-details-modal.scss */
 .change-details-modal {

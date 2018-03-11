@@ -70,6 +70,78 @@ label {
       align-self: flex-start;
   margin-bottom: 0; }
 
+/* line 4, albumShare/src/styles/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+div,
+section,
+article,
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px; }
+
+/* line 21, albumShare/src/styles/_typography.scss */
+h1 {
+  font-size: 48px; }
+
+/* line 25, albumShare/src/styles/_typography.scss */
+h2 {
+  font-size: 32px; }
+
+/* line 29, albumShare/src/styles/_typography.scss */
+a {
+  color: #006062; }
+  /* line 32, albumShare/src/styles/_typography.scss */
+  a:hover {
+    color: #EEEAD4; }
+
+/* line 37, albumShare/src/styles/_typography.scss */
+span {
+  font-size: 12px; }
+
+/* line 41, albumShare/src/styles/_typography.scss */
+form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+/* line 48, albumShare/src/styles/_typography.scss */
+input {
+  margin: 10px; }
+
+/* line 52, albumShare/src/styles/_typography.scss */
+input[type="submit"] {
+  padding: 20px;
+  margin: 20px;
+  background-color: #2EE2FA;
+  color: #006062;
+  border: 0;
+  font-weight: bold;
+  font-size: 16px; }
+  /* line 12, albumShare/src/styles/_mixins.scss */
+  input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #05a8bd; }
+
+/* line 56, albumShare/src/styles/_typography.scss */
+label {
+  font-size: 20px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 0; }
+
 /* line 1, albumShare/src/styles/table-format.scss */
 table {
   padding: 2px; }
@@ -148,3 +220,48 @@ article {
       article .recommendations-form .add-theme label {
         -ms-flex-item-align: center;
             align-self: center; }
+
+/* line 6, albumShare/src/styles/login-page.scss */
+form {
+  min-height: 235px; }
+
+/* line 10, albumShare/src/styles/login-page.scss */
+.lost-pw-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  visibility: hidden; }
+  /* line 15, albumShare/src/styles/login-page.scss */
+  .lost-pw-form button {
+    padding: 20px;
+    margin: 20px;
+    background-color: #2EE2FA;
+    color: #006062;
+    border: 0;
+    font-weight: bold;
+    font-size: 16px; }
+    /* line 12, albumShare/src/styles/_mixins.scss */
+    .lost-pw-form button:hover {
+      cursor: pointer;
+      background-color: #05a8bd; }
+
+/* line 21, albumShare/src/styles/login-page.scss */
+.lost-pw {
+  color: #006062;
+  text-decoration: underline; }
+  /* line 25, albumShare/src/styles/login-page.scss */
+  .lost-pw:hover {
+    color: #EEEAD4; }
+
+/* line 30, albumShare/src/styles/login-page.scss */
+.toggle {
+  animation: pw-form-toggle 3s linear; }
+
+@keyframes pw-form-toggle {
+  from {
+    visibility: hidden;
+    opacity: 0; }
+  to {
+    visibility: visible;
+    opacity: 1; } }

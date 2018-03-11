@@ -26,23 +26,6 @@ article {
             text-align: center;
             margin: $standard-padding 0;
         }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            > * {
-                margin: $standard-padding / 2;
-            }
-
-            label {
-                font-size: $standard-font-size * 1.25;
-                align-self: flex-start;
-                margin-bottom: 0;
-            }
-        }
     }
 
     .recommendations-form {

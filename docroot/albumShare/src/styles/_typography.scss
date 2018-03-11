@@ -1,4 +1,5 @@
 @import '_variables.scss';
+@import '_mixins.scss';
 
 h1,
 h2,
@@ -35,4 +36,25 @@ a {
 
 span {
     font-size: $font-size-small;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    margin: $standard-padding / 2;
+}
+
+input[type="submit"] {
+    @include button;
+}
+
+label {
+    font-size: $standard-font-size * 1.25;
+    align-self: flex-start;
+    margin-bottom: 0;
 }

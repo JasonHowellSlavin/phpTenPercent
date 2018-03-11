@@ -75,13 +75,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" ) {
 
 };
 ?>
-<link rel="stylesheet" type="text/css" href="../../dist/css/form-pages.css">
+<link rel="stylesheet" type="text/css" href="../../dist/css/login-page.css">
 <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../dist/scripts/recover-password.js"></script>
 
 <article>
-    <section>
+    <section class="initial-login">
         <h1>Welcome to albumShare!</h1>
         <?php include "../includes/loginForm.php" ?>
         <p>New to ablumShare? <a href="createAccount.php?new_account=true" target="_self"> create your account here!</a></p>
+        <p class="lost-pw">Lost your password?</p>
+        <div class="lost-pw-form">
+            <label for="recovery-email">Email for Account Recovery</label>
+            <input type="text" name="recovery-email">
+            <button class="recover-submit">Recover my Password!</button>
+        </div>
     </section>
 </article>
