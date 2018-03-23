@@ -1,10 +1,9 @@
 @import 'typography';
-@import 'change-details-modal';
 
 article {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-gap: $standard-padding;
 
     section {
@@ -59,16 +58,6 @@ td {
         }
     }
 
-    .menu-item.change-details {
-        span, i {
-            color: grey;
-            cursor: initial;
-        }
-    }
-
-
-
-
     i {
         color: black;
         justify-self: end;
@@ -83,15 +72,20 @@ td {
 }
 
 .recs-this-week {
-    background-color: $color-light;
+    background-color: $color-primary;
     grid-column: 1/4;
     grid-row:  2/5;
 }
 
 .share-album {
-    background-color: $color-light;
+    background-color: $color-primary;
     grid-column: 4/6;
     grid-row: 2/5;
+
+    form {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 }
 
 .results {
@@ -105,7 +99,7 @@ td {
             padding: 0 $standard-padding;
 
             &:first-of-type {
-                width: 33%;
+                width: 45%;
             }
         }
     }

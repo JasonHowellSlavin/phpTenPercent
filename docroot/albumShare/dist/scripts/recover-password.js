@@ -35,6 +35,16 @@ $(document).ready(function () {
         });
     }
 
+    function removeFormandReplace() {
+        var inputVal = $lostPWForm.find('input').val();
+
+        $lostPWForm.css('height', formHeight);
+        $lostPWForm.empty();
+        $('<h3></h3>', {
+            text: 'An email has been sent to ' + inputVal + '. Thank you.'
+        }).appendTo($lostPWForm);
+    }
+
     $('.lost-pw').on('click', function () {
         $initialLogin.css({
             'height': loginHeight,
@@ -48,5 +58,6 @@ $(document).ready(function () {
     $('.recover-submit').on('click', function () {
         console.log('click');
         ajaxRecoverPassword();
+        removeFormandReplace();
     });
 });

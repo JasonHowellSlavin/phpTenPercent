@@ -35,6 +35,16 @@ function ajaxRecoverPassword () {
         });
 }
 
+function removeFormandReplace () {
+    let inputVal = $lostPWForm.find('input').val();
+
+    $lostPWForm.css('height', formHeight);
+    $lostPWForm.empty();
+    $('<h3></h3>', {
+        text: 'An email has been sent to ' + inputVal + '. Thank you.'
+    }).appendTo($lostPWForm);
+}
+
 
 $('.lost-pw').on('click', () => {
     $initialLogin.css({
@@ -49,9 +59,7 @@ $('.lost-pw').on('click', () => {
 $('.recover-submit').on('click', () => {
     console.log('click');
    ajaxRecoverPassword();
+   removeFormandReplace();
 });
-
-
-
 
 });

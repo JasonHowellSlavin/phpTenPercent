@@ -64,6 +64,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" ) {
     }
 }
 ?>
+<link rel="stylesheet" type="text/css" href="../../dist/css/login-page.css">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
 <article>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <label for="current-password">Current Password</label>

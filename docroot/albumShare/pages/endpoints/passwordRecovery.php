@@ -61,8 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" ) {
         //Now that the has is inserted, construct our url
         $serverName = trim($_SERVER['SERVER_NAME']);
         $productionServer = "http://http://ec2-52-203-38-207.compute-1.amazonaws.com/phpTenPercent/docroot/albumShare/pages/loginPages";
-        $recoveryEmailParams = "passwordRecovery.php?recovery=" . $randomHash . "&email=" . $recoveryEmail . "&id=" . $userId;
-
+        $recoveryEmailParams = "passwordRecovery.php?recovery=" . $randomHash;
         if (strpos($serverName, 'localhost') !== false) {
             // We local
             $emailUrl = "http://localhost/albumShare/pages/loginPages/" . $recoveryEmailParams;
@@ -130,3 +129,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" ) {
         echo json_encode($userId);
     }
 };
+
+// Get the user name
+
+// Check to see that the user name is in the db
+
+// If it is , add 'apple' to the end of it
+
+// Return the new user name

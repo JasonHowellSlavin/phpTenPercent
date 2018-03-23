@@ -61,16 +61,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" ) {
         } else {
             echo "You entered it wrong";
         }
-
-
-
-        // if the user is in the db, we pull up the id associated with that user
-
-        // we then hash the password, and check to see if the hashed password for that user fits the password input
-
-        //if it does, we set the session object with the id of the user
-
-        // we then redirect to the welcome page.
     }
 
 };
