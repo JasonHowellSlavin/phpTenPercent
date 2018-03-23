@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" ) {
 
         //Now that the has is inserted, construct our url
         $serverName = trim($_SERVER['SERVER_NAME']);
-        $productionServer = "http://http://ec2-52-203-38-207.compute-1.amazonaws.com/phpTenPercent/docroot/albumShare/pages/loginPages/";
+        $productionServer = "http://ec2-52-203-38-207.compute-1.amazonaws.com/phpTenPercent/docroot/albumShare/pages/loginPages/";
         $recoveryEmailParams = "passwordRecovery.php?recovery=" . $randomHash;
         if (strpos($serverName, 'localhost') !== false) {
             // We local
